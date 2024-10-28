@@ -1,8 +1,10 @@
-* {
+body {
     font-family: judson;
-    background-color: black;
     color: white;
-    
+}
+
+body{
+    background-color: black;
 }
 
 /* Standard-Margins und Padding entfernen */
@@ -90,6 +92,36 @@ body {
     border: 1px solid red;
 }
 
+#calltoaction {
+    display: flex;
+    flex-direction: column; /* Inhalt vertikal anordnen */
+    align-items: center;    /* Horizontal zentrieren */
+    justify-content: center; /* Vertikal zentrieren */
+    text-align: center;      /* Text zentrieren */
+    padding: 20px;           /* Optional: Abstand nach innen */
+}
+
+#calltoaction .description {
+    max-width: 600px; /* Optional: Maximale Breite für bessere Lesbarkeit */
+    margin-bottom: 20px; /* Abstand unter dem Text */
+}
+
+#calltoaction button {
+    padding: 10px 20px;
+    font-size: 16px;
+    background-color: black; /* Ursprüngliche Hintergrundfarbe */
+    border: 3px solid white;
+    color: white;
+    cursor: pointer;
+    transition: all 0.3s ease; /* Weicher Übergang beim Hover */
+    font-family: judson;
+}
+
+#calltoaction button:hover {
+    background-color: white; /* Ändere den gesamten Hintergrund auf weiß */
+    color: black; /* Ändere die Textfarbe auf schwarz */
+}
+
 
 .header-text {
     font-size: 45px;
@@ -100,6 +132,7 @@ body {
     font-size: 30px;
     margin-top: 20px;
 }
+
 
 .space{
     padding-top: 200px;
