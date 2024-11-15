@@ -1,0 +1,46 @@
+
+#calltoaction .description {
+    max-width: 600px; /* Optional: Maximale Breite für bessere Lesbarkeit */
+    margin-bottom: 20px; /* Abstand unter dem Text */
+}
+
+
+.header-text {
+    font-size: 45px;
+    margin-top: 20px;
+}
+
+.nonheader-text {
+    font-size: 30px;
+    margin-top: 20px;
+}
+
+/* xs */
+@media (min-width: 475px) {
+    
+}
+
+/* sm */
+@media (min-width: 640px) {
+   
+}
+
+/* md */
+@media (min-width: 768px) {
+   
+}
+
+/* lg */
+@media (min-width: 1024px) {
+    
+}
+
+/* xl */
+@media (min-width: 1280px) {
+    
+}
+
+/* xxl */
+@media (min-width: 1536px) {
+    
+}

@@ -1,5 +1,5 @@
 body {
-    font-family: judson;
+    font-family: galano, sans-serif;
     color: white;
 }
 
@@ -35,63 +35,22 @@ body {
     padding-right: 0.5rem;
     border: 1px solid red;
     display: flex;
-    /* Flexbox aktivieren */
+    /* Flexbox aktivieren 
     justify-content: space-between;
-    /* Platz zwischen Logo und Hamburger */
+    /* Platz zwischen Logo und Hamburger 
     align-items: center;
     /* Vertikale Zentrierung */
 }
 
-.logo {
-    margin-top: 30px;
-    width: 140px;
-    height: 100px;
-    stroke: black;
-    stroke-width: 2px;
-    border: 1px solid red;
+.header-container, .logo {
+    align-items: center;
 }
 
-#BVB {
-    padding-top: 30px;
-    width: 100vw; /* 100% der Viewport-Breite */
-    height: max-content; /* Höhe einstellen */
-    overflow: hidden; /* Überflüssige Bildteile ausblenden */
-    position: relative;
-    left: 50%;
-    transform: translateX(-50%); /* Zentriere das Bild */
-}
-
-.textpic {
-    padding-top: 25px;
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    object-position: center;
+.header-container, .hamburger {
+    justify-content: right;
 }
 
 
-
-#BVB::before {
-    content: "";
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background: 
-    linear-gradient(rgb(0, 0, 0) 22%, rgba(0, 0, 0, 0.41) 70%); /* Linearer Gradient von oben nach unten
-    linear-gradient(rgba(0, 0, 0, 0) 80%, rgba(0, 0, 0, 1) 100%);  Linearer Gradient von unten nach oben*/
-    z-index: 1;
-}
-
-.hamburger {
-    margin-top: 30px; 
-    width: 70px;
-    height: 70px;
-    stroke: black;
-    stroke-width: 2px;
-    border: 1px solid red;
-}
 
 #calltoaction {
     display: flex;
@@ -102,36 +61,26 @@ body {
     padding: 20px;           /* Optional: Abstand nach innen */
 }
 
-#calltoaction .description {
-    max-width: 600px; /* Optional: Maximale Breite für bessere Lesbarkeit */
-    margin-bottom: 20px; /* Abstand unter dem Text */
-}
-
 #calltoaction button {
     padding: 10px 20px;
     font-size: 16px;
-    background-color: black; /* Ursprüngliche Hintergrundfarbe */
-    border: 3px solid white;
-    color: white;
+    background-color: rgb(255, 255, 255); /* Ursprüngliche Hintergrundfarbe */
+    border: 3px solid rgb(0, 0, 0);
+    color: rgb(0, 0, 0);
     cursor: pointer;
     transition: all 0.3s ease; /* Weicher Übergang beim Hover */
     font-family: judson;
 }
 
 #calltoaction button:hover {
-    background-color: white; /* Ändere den gesamten Hintergrund auf weiß */
+    background-color: rgb(255, 255, 255); /* Ändere den gesamten Hintergrund auf weiß */
     color: black; /* Ändere die Textfarbe auf schwarz */
 }
 
-
-.header-text {
-    font-size: 45px;
-    margin-top: 20px;
-}
-
-.nonheader-text {
-    font-size: 30px;
-    margin-top: 20px;
+#buttonbackground {
+    background-color: white;
+    width: 100%;
+    height: 100px;
 }
 
 
@@ -157,28 +106,32 @@ body {
 
 /* md */
 @media (min-width: 768px) {
-    .container {
+    .container, 
+    .header-container {
         max-width: 768px;
     }
 }
 
 /* lg */
 @media (min-width: 1024px) {
-    .container {
+    .container, 
+    .header-container {
         max-width: 1024px;
     }
 }
 
 /* xl */
 @media (min-width: 1280px) {
-    .container {
+    .container, 
+    .header-container {
         max-width: 1280px;
     }
 }
 
 /* 2xl */
 @media (min-width: 1536px) {
-    .container {
+    .container, 
+    .header-container {
         max-width: 1536px;
     }
 }

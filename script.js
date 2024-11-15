@@ -1,5 +1,5 @@
 document.addEventListener('DOMContentLoaded', function () {
-    
+    /*
 
     let scrollTimeout;
 
@@ -30,7 +30,7 @@ document.addEventListener('DOMContentLoaded', function () {
             }
         }, 200); // Warte 200ms nach dem letzten Scroll-Event
     });
-    
+    */
     
 });
 
