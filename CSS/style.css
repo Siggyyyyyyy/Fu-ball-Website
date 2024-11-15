@@ -35,19 +35,21 @@ body {
     padding-right: 0.5rem;
     border: 1px solid red;
     display: flex;
-    /* Flexbox aktivieren 
+    /* Flexbox aktivieren */
     justify-content: space-between;
-    /* Platz zwischen Logo und Hamburger 
+    /* Platz zwischen Logo und Hamburger */
     align-items: center;
     /* Vertikale Zentrierung */
 }
-
+/*
 .header-container, .logo {
     align-items: center;
 }
 
 .header-container, .hamburger {
     justify-content: right;
+}
+*/
 
 #BVB::before {
     content: "";
@@ -57,7 +59,7 @@ body {
     width: 100%;
     height: 100%;
     background: 
-    linear-gradient(rgb(0, 0, 0) 22%, rgba(0, 0, 0, 0.41) 70%); /* Linearer Gradient von oben nach unten
+    linear-gradient(rgb(0, 0, 0) 22%, rgba(0, 0, 0, 0) 70%); /* Linearer Gradient von oben nach unten
     linear-gradient(rgba(0, 0, 0, 0) 80%, rgba(0, 0, 0, 1) 100%);  Linearer Gradient von unten nach oben*/
     z-index: 1;
 }
@@ -94,13 +96,13 @@ body {
 }
 
 #calltoaction button:hover {
-    background-color: rgb(255, 255, 255); /* Ändere den gesamten Hintergrund auf weiß */
-    color: black; /* Ändere die Textfarbe auf schwarz */
+    background-color: rgb(0, 0, 0); /* Ändere den gesamten Hintergrund auf weiß */
+    color: rgb(255, 255, 255); /* Ändere die Textfarbe auf schwarz */
 }
 
 #buttonbackground {
     background-color: white;
-    width: 100%;
+    width: 100wv;
     height: 100px;
 }
 
