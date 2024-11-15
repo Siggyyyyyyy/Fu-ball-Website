@@ -79,7 +79,7 @@ body {
     width: 100%;
     height: 100%;
     background: 
-    linear-gradient(rgb(0, 0, 0) 22%, rgba(0, 0, 0, 0.41) 70%); /* Linearer Gradient von oben nach unten
+    linear-gradient(rgb(0, 0, 0) 22%, rgba(0, 0, 0, 0) 70%); /* Linearer Gradient von oben nach unten
     linear-gradient(rgba(0, 0, 0, 0) 80%, rgba(0, 0, 0, 1) 100%);  Linearer Gradient von unten nach oben*/
     z-index: 1;
 }
