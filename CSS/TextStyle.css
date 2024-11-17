@@ -1,19 +1,31 @@
-
-#calltoaction .description {
-    max-width: 600px; /* Optional: Maximale Breite für bessere Lesbarkeit */
-    margin-bottom: 20px; /* Abstand unter dem Text */
-}
-
-
-.header-text {
+.header-head-text {
     font-size: 45px;
     margin-top: 20px;
+    font-weight: 600;
+}
+
+.header-text {
+    font-weight: 300;
 }
 
 .nonheader-text {
     font-size: 30px;
+    font-weight: 400;
     margin-top: 20px;
 }
+
+.description {
+    font-weight: 100;
+}
+
+#calltoaction .description {
+    font-weight: 200;
+    max-width: 600px; /* Optional: Maximale Breite für bessere Lesbarkeit */
+    margin-bottom: 20px; /* Abstand unter dem Text */
+    
+}
+
+
 
 /* xs */
 @media (min-width: 475px) {

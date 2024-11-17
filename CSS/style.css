@@ -1,5 +1,41 @@
+@font-face {
+    font-family: 'Galano';
+    src: url('./fonts/GalanoGrotesqueAltLight.otf');
+    font-weight: 100;
+}
+
+@font-face {
+    font-family: 'Galano';
+    src: url('./fonts/GalanoGrotesqueAltRegular.otf');
+    font-weight: 200;
+}
+
+@font-face {
+    font-family: 'Galano';
+    src: url('./fonts/GalanoGrotesqueAltMedium.otf');
+    font-weight: 300;
+}
+
+@font-face {
+    font-family: 'Galano';
+    src: url('./fonts/GalanoGrotesqueAltSemiBold.otf');
+    font-weight: 400;
+}
+
+@font-face {
+    font-family: 'Galano';
+    src: url('./fonts/GalanoGrotesqueAltBold.otf');
+    font-weight: 500;
+}
+
+@font-face {
+    font-family: 'Galano';
+    src: url('./fonts/GalanoGrotesqueAltHeavy.otf');
+    font-weight: 600;
+}
+
 body {
-    font-family: galano, sans-serif;
+    font-family: 'Galano', sans-serif;
     color: white;
 }
 
@@ -104,6 +140,12 @@ body {
     background-color: white;
     width: 100wv;
     height: 100px;
+    margin-left: 0;
+}
+
+.footer-container {
+    background-color: #484848;
+    height: 400px;
 }
 
 

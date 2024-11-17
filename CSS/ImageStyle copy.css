@@ -1,13 +1,25 @@
 .logo {
-    margin-top: 10px;
+    margin-top: 30px;
     width: 240px;
     height: 110px;
+    stroke: black;
+    stroke-width: 2px;
+    border: 1px solid red;
+    transform: translateX(50%)
+}
+
+.hamburger {
+    margin-top: 20px;
+    margin-right: 10px; 
+    width: 60px;
+    height: 60px;
     stroke: black;
     stroke-width: 2px;
     border: 1px solid red;
 }
 
 #BVB {
+    margin-top: -0px;
     padding-top: 30px;
     width: 100vw; /* 100% der Viewport-Breite */
     height: max-content; /* Höhe einstellen */
@@ -18,6 +30,7 @@
 }
 
 .textpic {
+    
     padding-top: 25px;
     width: 100%;
     height: 100%;
@@ -38,14 +51,7 @@
     z-index: 1;
 }
 
-.hamburger {
-    margin-top: 30px; 
-    width: 70px;
-    height: 70px;
-    stroke: black;
-    stroke-width: 2px;
-    border: 1px solid red;
-}
+
 /* xs */
 @media (min-width: 475px) {
     
