@@ -1,0 +1,110 @@
+#footer {
+    
+    background: linear-gradient(rgba(72, 72, 72, 0) 10%, rgb(72, 72, 72) 60%);;
+    color: white;
+    padding: 40px 20px;
+    font-family: "Galano", sans-serif;
+}
+
+.footer-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.footer-message {
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.footer-message p {
+    margin: 10px 0;
+}
+
+.footer-icon {
+    width: 50px;
+    height: auto;
+    margin-bottom: 0px;
+}
+
+.footer-links {
+    width: 100%; /* Breite auf 100% setzen */
+    max-width: 400px; /* Optional: Maximalbreite */
+    text-align: left; /* Links ausrichten */
+    margin-bottom: 10px;
+}
+
+.footer-links p {
+    margin: 10px 10px;
+    cursor: pointer;
+    font-weight: 200;
+    font-size: 20px;
+}
+
+.footer-links hr {
+    width: 100%; /* Striche breiter gemacht */
+    margin: 0px 0; /* Etwas engerer Abstand */
+    border: 1px solid white;
+}
+
+.footer-social {
+    margin-top: 20px;
+    width: 100%; /* Volle Breite für gleichmäßige Verteilung */
+}
+
+.footer-social p {
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.social-icons {
+    display: flex;
+    justify-content: space-around; /* Gleichmäßige Verteilung */
+    align-items: center;
+    width: 100%; /* Volle Breite */
+    max-width: 400px; /* Optional: Maximalbreite */
+    margin: 0 auto;
+}
+
+.social-icons img {
+    width: 40px;
+    height: 40px;
+    cursor: pointer;
+    transition: transform 0.2s;
+}
+
+.social-icons img:hover {
+    transform: scale(1.2);
+}
+
+
+
+/* xs */
+@media (min-width: 475px) {
+    
+}
+
+/* sm */
+@media (min-width: 640px) {
+   
+}
+
+/* md */
+@media (min-width: 768px) {
+   
+}
+
+/* lg */
+@media (min-width: 1024px) {
+    
+}
+
+/* xl */
+@media (min-width: 1280px) {
+    
+}
+
+/* xxl */
+@media (min-width: 1536px) {
+    
+}
