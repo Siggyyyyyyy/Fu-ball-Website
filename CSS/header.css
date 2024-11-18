@@ -9,23 +9,11 @@
     margin-right: auto;
     padding-left: 0.5rem;
     padding-right: 0.5rem;
-    border: 1px solid red;
     display: flex;
-    /* Flexbox aktivieren */
-    justify-content: space-between;
-    /* Platz zwischen Logo und Hamburger */
-    align-items: center;
-    /* Vertikale Zentrierung */
+    justify-content: center; /* Zentriert das Logo zunächst */
+    align-items: center; /* Vertikal zentrieren */
+    position: relative; /* Ermöglicht absolute Platzierung des Hamburgers */
 }
-/*
-.header-container, .logo {
-    align-items: center;
-}
-
-.header-container, .hamburger {
-    justify-content: right;
-}
-*/
 
 .logo {
     margin-top: 30px;
@@ -34,18 +22,19 @@
     stroke: black;
     stroke-width: 2px;
     border: 1px solid red;
-    transform: translateX(50%)
 }
 
 .hamburger {
-    margin-top: 20px;
-    margin-right: 10px; 
+    position: absolute; /* Entfernt den Hamburger aus dem Flexfluss */
+    top: 50px; /* Positionierung am oberen Rand */
+    right: 10px; /* Abstand vom rechten Rand */
     width: 60px;
     height: 60px;
     stroke: black;
     stroke-width: 2px;
     border: 1px solid red;
 }
+
 
 
 /* xs */
@@ -55,6 +44,10 @@
 
 /* sm */
 @media (min-width: 640px) {
+
+    .logo {
+        
+    }
    
 }
 

@@ -1,3 +1,7 @@
+* {
+    box-sizing: border-box;
+}
+
 body {
     font-family: 'Galano', sans-serif;
     color: white;
@@ -37,36 +41,53 @@ body {
 
 #calltoaction {
     display: flex;
-    flex-direction: column; /* Inhalt vertikal anordnen */
-    align-items: center;    /* Horizontal zentrieren */
-    justify-content: center; /* Vertikal zentrieren */
-    text-align: center;      /* Text zentrieren */
-    padding: 20px;           /* Optional: Abstand nach innen */
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 20px;
+    font-family: "judson", sans-serif;
+    position: relative;
+}
+
+#buttonbackground {
+    background-color: white;
+    width: 100vw; /* Nimmt die volle Breite des Viewports ein */
+    height: 100px;
+    display: flex; /* Flexbox, um Inhalte im Container zu zentrieren */
+    justify-content: center;
+    align-items: center;
+    margin: 0; /* Entferne alle unerwünschten Ränder */
+    position: relative;
+    left: 0;
 }
 
 #calltoaction button {
     padding: 10px 20px;
     font-size: 16px;
-    background-color: rgb(255, 255, 255); /* Ursprüngliche Hintergrundfarbe */
+    background-color: rgb(255, 255, 255);
     border: 3px solid rgb(0, 0, 0);
     color: rgb(0, 0, 0);
     cursor: pointer;
-    transition: all 0.3s ease; /* Weicher Übergang beim Hover */
-    font-family: judson;
+    transition: all 0.3s ease;
+    font-family: "Galano", sans-serif; /* Font-Familie hinzugefügt */
+    margin: 0 auto;
+}
+
+#calltoaction button a {
+    font-weight: 400; /* Falls nötig */
 }
 
 #calltoaction button:hover {
-    background-color: rgb(0, 0, 0); /* Ändere den gesamten Hintergrund auf weiß */
-    color: rgb(255, 255, 255); /* Ändere die Textfarbe auf schwarz */
+    background-color: rgb(0, 0, 0);
+    color: rgb(255, 255, 255);
 }
 
-#buttonbackground {
-    background-color: white;
-    width: 100wv;
-    height: 100px;
-    margin-left: 0;
+#calltoaction .description {
+    max-width: 600px; /* Beschränkt die Textbreite */
+    margin-bottom: 20px; /* Abstand zwischen Text und Button */
+    text-align: center;
 }
-
 
 .space{
     padding-top: 200px;
