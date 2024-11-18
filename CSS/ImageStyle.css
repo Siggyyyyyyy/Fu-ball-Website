@@ -1,22 +1,4 @@
-.logo {
-    margin-top: 30px;
-    width: 240px;
-    height: 110px;
-    stroke: black;
-    stroke-width: 2px;
-    border: 1px solid red;
-    transform: translateX(50%)
-}
 
-.hamburger {
-    margin-top: 20px;
-    margin-right: 10px; 
-    width: 60px;
-    height: 60px;
-    stroke: black;
-    stroke-width: 2px;
-    border: 1px solid red;
-}
 
 #BVB {
     margin-top: -0px;

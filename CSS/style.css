@@ -1,39 +1,3 @@
-@font-face {
-    font-family: 'Galano';
-    src: url('./fonts/GalanoGrotesqueAltLight.otf');
-    font-weight: 100;
-}
-
-@font-face {
-    font-family: 'Galano';
-    src: url('./fonts/GalanoGrotesqueAltRegular.otf');
-    font-weight: 200;
-}
-
-@font-face {
-    font-family: 'Galano';
-    src: url('./fonts/GalanoGrotesqueAltMedium.otf');
-    font-weight: 300;
-}
-
-@font-face {
-    font-family: 'Galano';
-    src: url('./fonts/GalanoGrotesqueAltSemiBold.otf');
-    font-weight: 400;
-}
-
-@font-face {
-    font-family: 'Galano';
-    src: url('./fonts/GalanoGrotesqueAltBold.otf');
-    font-weight: 500;
-}
-
-@font-face {
-    font-family: 'Galano';
-    src: url('./fonts/GalanoGrotesqueAltHeavy.otf');
-    font-weight: 600;
-}
-
 body {
     font-family: 'Galano', sans-serif;
     color: white;
@@ -58,35 +22,6 @@ body {
     border: 1px solid red;
 }
 
-#header {
-    background-position: center;
-    background-size: cover;
-}   
-
-.header-container {
-    width: 100%;
-    margin-left: auto;
-    margin-right: auto;
-    padding-left: 0.5rem;
-    padding-right: 0.5rem;
-    border: 1px solid red;
-    display: flex;
-    /* Flexbox aktivieren */
-    justify-content: space-between;
-    /* Platz zwischen Logo und Hamburger */
-    align-items: center;
-    /* Vertikale Zentrierung */
-}
-/*
-.header-container, .logo {
-    align-items: center;
-}
-
-.header-container, .hamburger {
-    justify-content: right;
-}
-*/
-
 #BVB::before {
     content: "";
     position: absolute;
@@ -99,17 +34,6 @@ body {
     linear-gradient(rgba(0, 0, 0, 0) 80%, rgba(0, 0, 0, 1) 100%);  Linearer Gradient von unten nach oben*/
     z-index: 1;
 }
-
-.hamburger {
-    margin-top: 30px; 
-    width: 70px;
-    height: 70px;
-    stroke: black;
-    stroke-width: 2px;
-    border: 1px solid red;
-}
-
-
 
 #calltoaction {
     display: flex;
