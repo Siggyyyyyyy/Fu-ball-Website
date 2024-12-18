@@ -1,7 +1,12 @@
+/* HEADER-Bereich */
 #header {
-    background-position: center;
-    background-size: cover;
-}   
+    position: absolute; /* Absolut über das Video legen */
+    top: 0; /* Ganz oben im Viewport */
+    left: 0;
+    width: 100%; /* Über die gesamte Breite */
+    z-index: 3; /* Über dem Video und dem Verlauf */
+    background: none; /* Kein Hintergrund, um das Video sichtbar zu halten */
+}
 
 .header-container {
     width: 100%;
@@ -10,18 +15,15 @@
     padding-left: 0.5rem;
     padding-right: 0.5rem;
     display: flex;
-    justify-content: center; /* Zentriert das Logo zunächst */
+    justify-content: center; /* Zentriert das Logo */
     align-items: center; /* Vertikal zentrieren */
-    position: relative; /* Ermöglicht absolute Platzierung des Hamburgers */
+    position: relative;
 }
 
 .logo {
     margin-top: 30px;
     width: 240px;
     height: 110px;
-    stroke: black;
-    stroke-width: 2px;
-    border: 1px solid red;
 }
 
 .hamburger {
@@ -30,11 +32,7 @@
     right: 10px; /* Abstand vom rechten Rand */
     width: 60px;
     height: 60px;
-    stroke: black;
-    stroke-width: 2px;
-    border: 1px solid red;
 }
-
 
 
 /* xs */

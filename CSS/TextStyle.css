@@ -1,17 +1,39 @@
 .header-head-text {
     font-size: 45px;
     margin-top: 20px;
+    margin-bottom: 10px;
     font-weight: 600;
+    line-height: 1.2;
 }
 
 .header-text {
-    font-weight: 300;
+    font-weight: 200;
+    padding-bottom: 10px;
 }
 
-.nonheader-text {
-    font-size: 30px;
+.statements-header {
+    text-align: center;
+    font-size: 25px;
     font-weight: 400;
     margin-top: 20px;
+}
+
+.statement-headtext {
+    width: 80%; /* Der Text nimmt 80% der Breite ein */
+    padding-bottom: 5px;
+    margin-left: auto; 
+    margin-right: auto; 
+    font-weight: 400;
+    font-size: 17px;
+}
+
+.statement-text {
+    width: 80%; /* Der Text nimmt 80% der Breite ein */
+    margin-left: auto; 
+    margin-right: auto; 
+    font-weight: 100;
+    font-size: 13px;
+    margin-bottom: 20px;
 }
 
 .description {

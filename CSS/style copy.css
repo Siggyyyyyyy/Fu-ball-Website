@@ -1,76 +1,21 @@
 * {
     box-sizing: border-box;
-    margin: 0;
-    padding: 0;
 }
 
 body {
     font-family: 'Galano', sans-serif;
     color: white;
+}
+
+body{
     background-color: black;
 }
 
-.video-background-container {
-    position: relative;
-    display: flex; /* Flexbox aktivieren */
-    flex-direction: column; /* Vertikale Ausrichtung der Kinder */
-    justify-content: flex-end; /* Head-Container an den unteren Rand verschieben */
-    width: 100%;
-    height: 600px; /* Feste Höhe des Containers */
-    overflow: hidden;
-    /*border: 1px solid red;*/
-    margin-top: 50px;
+/* Standard-Margins und Padding entfernen */
+body {
+    margin: 0;
+    padding: 0;
 }
-
-.video-background-container::before {
-    content: ""; /* Erforderlich, um das Pseudo-Element sichtbar zu machen */
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background: 
-    linear-gradient(rgb(0, 0, 0) 12%, rgba(0, 0, 0, 0) 70%),
-    linear-gradient(rgba(0, 0, 0, 0) 60%, rgba(0, 0, 0, 1) 100%);
-    z-index: 1; /* Stellt sicher, dass der Verlauf über dem Video liegt */
-    pointer-events: none; /* Macht das Pseudo-Element "durchklickbar", sodass keine Interaktion blockiert wird */
-}
-
-.video-background-container video {
-    position: absolute;
-    top: 50%; /* Zentriert das Video vertikal */
-    left: 50%; /* Zentriert das Video horizontal */
-    width: 100%; /* Breite passt sich an die Website-Breite an */
-    height: auto; /* Höhe wird automatisch berechnet */
-    transform: translate(-50%, -50%); /* Korrekte Zentrierung */
-}
-
-.overlay-content {
-    position: relative;
-    z-index: 1;
-    color: white;
-    padding: 2rem; /* Abstand für den Text */
-    
-}
-
-.head-container {
-    width: 100%;
-    margin-left: auto;
-    margin-right: auto;
-    padding-left: 0.5rem;
-    padding-right: 0.5rem;
-    /*border: 1px solid red;*/
-}
-
-#statement-container{
-    width: 100%;
-    margin-left: auto;
-    margin-right: auto;
-    padding-left: 0.5rem;
-    padding-right: 0.5rem;
-    /*border: 1px solid red;*/
-}
-
 
 .container{
     width: 100%;
@@ -78,7 +23,7 @@ body {
     margin-right: auto;
     padding-left: 0.5rem;
     padding-right: 0.5rem;
-    /*border: 1px solid red;*/
+    border: 1px solid red;
 }
 
 #BVB::before {
@@ -145,7 +90,7 @@ body {
 }
 
 .space{
-    padding-top: 100px;
+    padding-top: 200px;
 }
 
 /* xs */
