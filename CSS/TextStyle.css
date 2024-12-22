@@ -19,18 +19,20 @@
 }
 
 .statement-headtext {
-    width: 80%; /* Der Text nimmt 80% der Breite ein */
+    width: 80%;
+    /* Der Text nimmt 80% der Breite ein */
     padding-bottom: 5px;
-    margin-left: auto; 
-    margin-right: auto; 
+    margin-left: auto;
+    margin-right: auto;
     font-weight: 400;
     font-size: 17px;
 }
 
 .statement-text {
-    width: 80%; /* Der Text nimmt 80% der Breite ein */
-    margin-left: auto; 
-    margin-right: auto; 
+    width: 80%;
+    /* Der Text nimmt 80% der Breite ein */
+    margin-left: auto;
+    margin-right: auto;
     font-weight: 100;
     font-size: 13px;
     margin-bottom: 20px;
@@ -42,39 +44,29 @@
 
 #calltoaction .description {
     font-weight: 200;
-    max-width: 600px; /* Optional: Maximale Breite für bessere Lesbarkeit */
-    margin-bottom: 20px; /* Abstand unter dem Text */
-    
+    max-width: 600px;
+    /* Optional: Maximale Breite für bessere Lesbarkeit */
+    margin-bottom: 20px;
+    /* Abstand unter dem Text */
+
 }
 
 
 
 /* xs */
-@media (min-width: 475px) {
-    
-}
+@media (min-width: 475px) {}
 
 /* sm */
-@media (min-width: 640px) {
-   
-}
+@media (min-width: 640px) {}
 
 /* md */
-@media (min-width: 768px) {
-   
-}
+@media (min-width: 768px) {}
 
 /* lg */
-@media (min-width: 1024px) {
-    
-}
+@media (min-width: 1024px) {}
 
 /* xl */
-@media (min-width: 1280px) {
-    
-}
+@media (min-width: 1280px) {}
 
 /* xxl */
-@media (min-width: 1536px) {
-    
-}
+@media (min-width: 1536px) {}

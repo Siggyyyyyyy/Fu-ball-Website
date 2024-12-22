@@ -10,131 +10,168 @@
     <link rel="stylesheet" href="css/header.css">
     <link rel="stylesheet" href="css/footer.css">
     <link rel="stylesheet" href="css/font.css">
- 
+
     <script src="script.js"></script>
     <title>Nachhaltigkeit</title>
 </head>
 
 <body>
+
+
+    <!--HEADER-->
+    <section id="header">
+        <div class="header-container">
+            <!-- Linke Navigation -->
+            <nav class="nav-left">
+                <a href="#home">Home</a>
+                <a href="#problematik">Problematik</a>
+            </nav>
+            
+            <!-- Logo -->
+            <img src="PNG/LogoSchal.png" class="logo">
+            
+            <!-- Rechte Navigation -->
+            <nav class="nav-right">
+                <a href="#losung">Lösung</a>
+                <a href="#faq">FAQ</a>
+            </nav>
+    
+            <!-- Hamburger-Menü -->
+            <img src="PNG/Hamburger.png" class="hamburger" id="hamburger-icon">
+        </div>
+    </section>
     
 
-<!--HEADER-->
-<section id="header"> 
-    <div class="header-container">
-        <img src="PNG/LogoSchal.png" class="logo">
-        <img src="PNG/Hamburger.png" class="hamburger">
-    </div>
-</section>
-<!--HEADER-->
-
-<div class="video-background-container">
-    <!-- Overlay-Inhalt -->
-    <div class="overlay-content">
-        
-        <div class="head-container">
-            
-            <div class="header-head-text">
-                <p> Unser Fußball - <br> basisnah </p>
-            </div>
-            <div class="header-text">
-                <p> Der Profifußball braucht einen grundlegenden Wandel. 
-                    Punktuelle Änderungen reichen nicht 
-                    – wir wollen einen zeitgemäßen Fußball! </p>
-            </div>
+    <!-- Overlay-Menü -->
+    <div id="hamburger-menu">
+        <div class="menu-content">
+            <img src="PNG/CloseButton.png" class="close-menu" id="close-menu">
+            <a href="#home">Home</a>
+            <a href="#problematik">Problematik</a>
+            <a href="#loesung">Lösung</a>
+            <a href="#faq">FAQ</a>
         </div>
     </div>
-    <!-- Hintergrundvideo -->
-    <video autoplay muted loop>
-        <source src="MP4/Protestzusammenschnitt Hochkant.mp4" type="video/mp4">
-        Ihr Browser unterstützt das Video-Tag nicht.
-    </video>
-    <!-- Linear Gradient Overlay -->
-    <div class="video-gradient"></div>
-</div>
 
-<div class="space">
-    
-</div>
+    <!--HEADER-->
 
-<div class="statement-container">
-    <div class="statment">
+    <div class="video-background-container">
+        <!-- Overlay-Inhalt -->
+        <div class="overlay-content">
+
+            <div class="head-container">
+
+                <div class="header-head-text">
+                    <p> Unser Fußball - <br> basisnah </p>
+                </div>
+                <div class="header-text">
+                    <p> Der Profifußball braucht einen grundlegenden Wandel.
+                        Punktuelle Änderungen reichen nicht
+                        – wir wollen einen zeitgemäßen Fußball! </p>
+                </div>
+            </div>
+        </div>
+        <!-- Hintergrundvideo -->
+        <video autoplay muted loop>
+            <source src="MP4/Protestzusammenschnitt Hochkant.mp4" type="video/mp4">
+            Ihr Browser unterstützt das Video-Tag nicht.
+        </video>
+        <!-- Linear Gradient Overlay -->
+        <div class="video-gradient"></div>
+    </div>
+
+    <div class="space" style="padding-top: 100px">
+    </div>
+
+    <div class="statement-container">
         <div class="statements-header">
             <p> Was macht ihn aus? </p>
         </div>
-        <div class="image-container" id="BVB">
-            <img src="PNG/Fairness.png" class="textpic">
-        </div>
-        <div class="statement-headtext">
-            <p> Ein fairer Wettbewerb </p>
-        </div>
-        <div class="statement-text">
-            <p> Ein fairer Wettbewerb ist das Herzstück des Fußballs, doch er steht vor großen Herausforderungen. 
-                <br>Wie kann unser Fußball gerechter und ausgewogener gestaltet werden? </p>
-        </div>
-        <div class="image-container" id="BVB">
-            <img src="PNG/50+1.jpg" class="textpic">
-        </div>
-        <div class="statement-headtext">
-            <p> demokratisch & wirtschaftlich nachhaltig </p>
-        </div>
-        <div class="statement-text">
-            <p> Der Fußball prägt unsere Gesellschaft wie kaum ein anderer Sport. 
-                Doch wird er seiner Verantwortung gerecht? </p>
-        </div>
-        <div class="image-container" id="BVB">
-            <img src="PNG/HumanRights.jpg" class="textpic">
-        </div>
-        <div class="statement-headtext">
-            <p> Ein gesellschaftliches Vorbild </p>
-        </div>
-        <div class="statement-text">
-            <p> Unser Fußball braucht eine stabile Grundlage für die Zukunft. 
-                Wie kann wirtschaftliche Nachhaltigkeit dabei gelingen? </p>
-        </div>
-        <div class="image-container" id="BVB">
-            <img src="PNG/Schaals.jpg" class="textpic">
-        </div>
-        <div class="statement-headtext">
-            <p> Lebt durch seine Fans </p>
-        </div>
-        <div class="statement-text">
-            <p> Ohne Fans verliert der Fußball seine Seele. 
-                Wie kann ein nachhaltiger Fußball sie schützen? </p>
-        </div>
-    </div>
-</div>
-    
+        <div class="statement">
 
-
-
-
-<!--FOOTER-->
-<section id="footer">
-    <div class="footer-container">
-        <div class="footer-message">
-            <img src="PNG/Megaphon.png" alt="Megaphone Icon" class="footer-icon">
-            <p>Forder auch deinen Verein auf sich stark für einen besseren Fußball zu machen</p>
-        </div>
-        <div class="footer-links">
-            <p>Kontakt</p>
-            <hr>
-            <p>Über uns</p>
-            <hr>
-            <p>FAQ</p>
-            <hr>
-        </div>
-        <div class="footer-social">
-            <p>Folge uns!</p>
-            <div class="social-icons">
-                <img src="PNG/Instagram.png" alt="Instagram">
-                <img src="PNG/X.png" alt="Twitter">
-                <img src="PNG/Facebook.png" alt="Facebook">
-                <img src="PNG/Signal.png" alt="Signal">
+            <div class="statement-item">
+                <div class="image-container" id="BVB">
+                    <img src="PNG/Fairness.png" class="textpic">
+                </div>
+                <div class="statement-headtext">
+                    <p> Ein fairer Wettbewerb </p>
+                </div>
+                <div class="statement-text">
+                    <p> Ein fairer Wettbewerb ist das Herzstück des Fußballs, doch er steht vor großen
+                        Herausforderungen.
+                        <br>Wie kann unser Fußball gerechter und ausgewogener gestaltet werden?
+                    </p>
+                </div>
+            </div>
+            <div class="statement-item">
+                <div class="image-container" id="BVB">
+                    <img src="PNG/50+1.jpg" class="textpic">
+                </div>
+                <div class="statement-headtext">
+                    <p> demokratisch & wirtschaftlich nachhaltig </p>
+                </div>
+                <div class="statement-text">
+                    <p> Der Fußball prägt unsere Gesellschaft wie kaum ein anderer Sport.
+                        Doch wird er seiner Verantwortung gerecht? </p>
+                </div>
+            </div>
+            <div class="statement-item">
+                <div class="image-container" id="BVB">
+                    <img src="PNG/HumanRights.jpg" class="textpic">
+                </div>
+                <div class="statement-headtext">
+                    <p> Ein gesellschaftliches Vorbild </p>
+                </div>
+                <div class="statement-text">
+                    <p> Unser Fußball braucht eine stabile Grundlage für die Zukunft.
+                        Wie kann wirtschaftliche Nachhaltigkeit dabei gelingen? </p>
+                </div>
+            </div>
+            <div class="statement-item">
+                <div class="image-container" id="BVB">
+                    <img src="PNG/Schaals.jpg" class="textpic">
+                </div>
+                <div class="statement-headtext">
+                    <p> Lebt durch seine Fans </p>
+                </div>
+                <div class="statement-text">
+                    <p> Ohne Fans verliert der Fußball seine Seele.
+                        Wie kann ein nachhaltiger Fußball sie schützen? </p>
+                </div>
             </div>
         </div>
     </div>
-</section>
 
-        
+
+
+    <!--FOOTER-->
+    <section id="footer">
+        <div class="footer-container">
+            <div class="footer-message">
+                <img src="PNG/Megaphon.png" alt="Megaphone Icon" class="footer-icon">
+                <p>Forder auch deinen Verein auf sich stark für einen besseren Fußball zu machen</p>
+            </div>
+            <div class="footer-links">
+                <p>Kontakt</p>
+                <hr>
+                <p>Über uns</p>
+                <hr>
+                <p>FAQ</p>
+                <hr>
+            </div>
+            <div class="footer-social">
+                <p>Folge uns!</p>
+                <div class="social-icons">
+                    <img src="PNG/Instagram.png" alt="Instagram">
+                    <img src="PNG/X.png" alt="Twitter">
+                    <img src="PNG/Facebook.png" alt="Facebook">
+                    <img src="PNG/Signal.png" alt="Signal">
+                </div>
+            </div>
+        </div>
+    </section>
+
+
 </body>
+
 </html>

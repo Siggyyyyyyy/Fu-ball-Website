@@ -12,87 +12,79 @@ body {
 
 .video-background-container {
     position: relative;
-    display: flex; /* Flexbox aktivieren */
-    flex-direction: column; /* Vertikale Ausrichtung der Kinder */
-    justify-content: flex-end; /* Head-Container an den unteren Rand verschieben */
+    display: flex;
+    /* Flexbox aktivieren */
+    flex-direction: column;
+    /* Vertikale Ausrichtung der Kinder */
+    justify-content: flex-end;
+    /* Head-Container an den unteren Rand verschieben */
     width: 100%;
-    height: 600px; /* Feste Höhe des Containers */
+    height: 600px;
+    /* Feste Höhe des Containers */
     overflow: hidden;
     /*border: 1px solid red;*/
     margin-top: 50px;
 }
 
 .video-background-container::before {
-    content: ""; /* Erforderlich, um das Pseudo-Element sichtbar zu machen */
+    content: "";
+    /* Erforderlich, um das Pseudo-Element sichtbar zu machen */
     position: absolute;
     top: 0;
     left: 0;
     width: 100%;
     height: 100%;
-    background: 
-    linear-gradient(rgb(0, 0, 0) 12%, rgba(0, 0, 0, 0) 70%),
-    linear-gradient(rgba(0, 0, 0, 0) 60%, rgba(0, 0, 0, 1) 100%);
-    z-index: 1; /* Stellt sicher, dass der Verlauf über dem Video liegt */
-    pointer-events: none; /* Macht das Pseudo-Element "durchklickbar", sodass keine Interaktion blockiert wird */
+    background:
+        linear-gradient(rgb(0, 0, 0) 12%, rgba(0, 0, 0, 0) 70%),
+        linear-gradient(rgba(0, 0, 0, 0) 60%, rgba(0, 0, 0, 1) 100%);
+    z-index: 1;
+    /* Stellt sicher, dass der Verlauf über dem Video liegt */
+    pointer-events: none;
+    /* Macht das Pseudo-Element "durchklickbar", sodass keine Interaktion blockiert wird */
 }
 
 .video-background-container video {
     position: absolute;
-    top: 50%; /* Zentriert das Video vertikal */
-    left: 50%; /* Zentriert das Video horizontal */
-    width: 100%; /* Breite passt sich an die Website-Breite an */
-    height: auto; /* Höhe wird automatisch berechnet */
-    transform: translate(-50%, -50%); /* Korrekte Zentrierung */
+    top: 50%;
+    /* Zentriert das Video vertikal */
+    left: 50%;
+    /* Zentriert das Video horizontal */
+    width: 100%;
+    /* Breite passt sich an die Website-Breite an */
+    height: auto;
+    /* Höhe wird automatisch berechnet */
+    transform: translate(-50%, -50%);
+    /* Korrekte Zentrierung */
 }
 
 .overlay-content {
+    width: 80%;
     position: relative;
+    left: 50%;
+    transform: translateX(-50%);
     z-index: 1;
     color: white;
-    padding: 2rem; /* Abstand für den Text */
-    
+    padding-bottom: 2rem;
+    /* Abstand für den Text */
+
 }
 
-.head-container {
+.statement {
+    display: flex;
+    flex-direction: column;
+    /* Standard: Untereinander */
+    border: 1px solid red;
+}
+
+
+.container {
     width: 100%;
     margin-left: auto;
     margin-right: auto;
     padding-left: 0.5rem;
     padding-right: 0.5rem;
-    /*border: 1px solid red;*/
 }
 
-#statement-container{
-    width: 100%;
-    margin-left: auto;
-    margin-right: auto;
-    padding-left: 0.5rem;
-    padding-right: 0.5rem;
-    /*border: 1px solid red;*/
-}
-
-
-.container{
-    width: 100%;
-    margin-left: auto;
-    margin-right: auto;
-    padding-left: 0.5rem;
-    padding-right: 0.5rem;
-    /*border: 1px solid red;*/
-}
-
-#BVB::before {
-    content: "";
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background: 
-    linear-gradient(rgb(0, 0, 0) 22%, rgba(0, 0, 0, 0) 70%); /* Linearer Gradient von oben nach unten
-    linear-gradient(rgba(0, 0, 0, 0) 80%, rgba(0, 0, 0, 1) 100%);  Linearer Gradient von unten nach oben*/
-    z-index: 1;
-}
 
 #calltoaction {
     display: flex;
@@ -107,12 +99,15 @@ body {
 
 #buttonbackground {
     background-color: white;
-    width: 100vw; /* Nimmt die volle Breite des Viewports ein */
+    width: 100vw;
+    /* Nimmt die volle Breite des Viewports ein */
     height: 100px;
-    display: flex; /* Flexbox, um Inhalte im Container zu zentrieren */
+    display: flex;
+    /* Flexbox, um Inhalte im Container zu zentrieren */
     justify-content: center;
     align-items: center;
-    margin: 0; /* Entferne alle unerwünschten Ränder */
+    margin: 0;
+    /* Entferne alle unerwünschten Ränder */
     position: relative;
     left: 0;
 }
@@ -125,12 +120,14 @@ body {
     color: rgb(0, 0, 0);
     cursor: pointer;
     transition: all 0.3s ease;
-    font-family: "Galano", sans-serif; /* Font-Familie hinzugefügt */
+    font-family: "Galano", sans-serif;
+    /* Font-Familie hinzugefügt */
     margin: 0 auto;
 }
 
 #calltoaction button a {
-    font-weight: 400; /* Falls nötig */
+    font-weight: 400;
+    /* Falls nötig */
 }
 
 #calltoaction button:hover {
@@ -139,59 +136,46 @@ body {
 }
 
 #calltoaction .description {
-    max-width: 600px; /* Beschränkt die Textbreite */
-    margin-bottom: 20px; /* Abstand zwischen Text und Button */
+    max-width: 600px;
+    /* Beschränkt die Textbreite */
+    margin-bottom: 20px;
+    /* Abstand zwischen Text und Button */
     text-align: center;
 }
 
-.space{
-    padding-top: 100px;
-}
+
 
 /* xs */
-@media (min-width: 475px) {
-    .container,
-    .header-container {
-        max-width: 475px;
-    }
-}
+@media (min-width: 475px) {}
 
 /* sm */
-@media (min-width: 640px) {
-    .container,
-    .header-container {
-        max-width: 640px;
-    }
-}
+@media (min-width: 640px) {}
 
 /* md */
-@media (min-width: 768px) {
-    .container, 
-    .header-container {
-        max-width: 768px;
-    }
-}
+@media (min-width: 768px) {}
 
 /* lg */
 @media (min-width: 1024px) {
-    .container, 
-    .header-container {
-        max-width: 1024px;
+    .statement {
+        flex-wrap: wrap;
+        /* Elemente umbrechen lassen */
+        flex-direction: row;
+        /* Ab 1024px: In einer Reihe */
+        justify-content: center;
+        /* Zentrierung innerhalb des Containers */
+    }
+
+    .statement-item {
+        width: calc(50% - 3rem);
+        /* Zwei Items pro Reihe mit Abstand */
+        margin-left: -1rem;
+        /* Abstand zwischen den Items */
+        margin-right: -1rem;
     }
 }
 
 /* xl */
-@media (min-width: 1280px) {
-    .container, 
-    .header-container {
-        max-width: 1280px;
-    }
-}
+@media (min-width: 1280px) {}
 
-/* 2xl */
-@media (min-width: 1536px) {
-    .container, 
-    .header-container {
-        max-width: 1536px;
-    }
-}
+/* xxl */
+@media (min-width: 1536px) {}

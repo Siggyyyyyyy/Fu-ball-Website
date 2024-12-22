@@ -1,46 +1,73 @@
-
-
-#BVB {
-    margin-top: -0px;
-    padding-top: 30px;
-    width: 80%; /* Das Bild nimmt 80% der Breite ein */
-    height: auto; /* Die Höhe wird automatisch angepasst, um das Seitenverhältnis zu wahren */
-    overflow: hidden; /* Überflüssige Bildteile ausblenden */
-    position: relative;
-    left: 50%;
-    transform: translateX(-50%); /* Zentriere den Container */
-}
-
 .textpic {
     padding-top: 20px;
     padding-bottom: 10px;
-    width: 100%; /* Bild füllt den Container */
-    height: auto; /* Die Höhe des Bildes wird automatisch angepasst */
+    width: 100%;
+    /* Bild füllt den Container */
+    height: auto;
+    /* Die Höhe des Bildes wird automatisch angepasst */
     object-fit: cover;
     object-position: center;
+    /*transition: transform 0.3s ease;
+     Sanfter Übergang beim Hover */
+
+}
+/*
+.image-container:hover .textpic {
+    transform: scale(1.1);
+     Leichter Zoom auf das Bild 
+}*/
+
+#BVB {
+    padding-top: 30px;
+    padding-bottom: 10px;
+    width: 80%;
+    /* Das Bild nimmt 80% der Breite ein */
+    height: auto;
+    /* Die Höhe wird automatisch angepasst, um das Seitenverhältnis zu wahren */
+    overflow: hidden;
+    /* Überflüssige Bildteile ausblenden */
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
+    /* Zentriere den Container */
+
 }
 
 #BVB::before {
-    background: linear-gradient(rgba(255, 255, 255, 0) 50%, rgb(0, 0, 0) 100%); /* Linearer Gradient von oben nach unten */
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background:
+        linear-gradient(rgba(255, 255, 255, 0) 50%, rgb(0, 0, 0) 100%);
+    /* Linearer Gradient von oben nach unten
+    linear-gradient(rgba(0, 0, 0, 0) 80%, rgba(0, 0, 0, 1) 100%);  Linearer Gradient von unten nach oben*/
+
 }
 
-
 .video-container {
-    
-    margin-top: -0px;
     padding-top: 30px;
-    width: 100vw; /* 100% der Viewport-Breite */
-    height: max-content; /* Höhe einstellen */
-    overflow: hidden; /* Überflüssige Bildteile ausblenden */
+    width: 100vw;
+    /* 100% der Viewport-Breite */
+    height: max-content;
+    /* Höhe einstellen */
+    overflow: hidden;
+    /* Überflüssige Bildteile ausblenden */
     position: relative;
     left: 50%;
-    transform: translateX(-50%); /* Zentriere das Bild */
+    transform: translateX(-50%);
+    /* Zentriere das Bild */
 }
 
 .video-container video {
-    width: 100%; /* Passt das Video an die Breite des Containers an */
-    height: auto; /* Bewahrt das Seitenverhältnis des Videos */
-    display: block; /* Entfernt eventuelle Inline-Abstände */
+    width: 100%;
+    /* Passt das Video an die Breite des Containers an */
+    height: auto;
+    /* Bewahrt das Seitenverhältnis des Videos */
+    display: block;
+    /* Entfernt eventuelle Inline-Abstände */
 }
 
 #protest::before {
@@ -50,8 +77,9 @@
     left: 0;
     width: 100%;
     height: 100%;
-    background: 
-    linear-gradient(rgb(0, 0, 0) 12%, rgba(255, 255, 255, 0) 70%); /* Linearer Gradient von oben nach unten
+    background:
+        linear-gradient(rgb(0, 0, 0) 12%, rgba(255, 255, 255, 0) 70%);
+    /* Linearer Gradient von oben nach unten
     linear-gradient(rgba(0, 0, 0, 0) 80%, rgba(0, 0, 0, 1) 100%);  Linearer Gradient von unten nach oben*/
     z-index: 1;
 }
@@ -59,33 +87,19 @@
 
 
 /* xs */
-@media (min-width: 475px) {
-    
-}
+@media (min-width: 475px) {}
 
 /* sm */
-@media (min-width: 640px) {
-   
-}
+@media (min-width: 640px) {}
 
 /* md */
-@media (min-width: 768px) {
-   
-}
+@media (min-width: 768px) {}
 
 /* lg */
-@media (min-width: 1024px) {
-    #protest video {
-        src: url("MP4/Protestzusammenschnitt Quer.mp4");
-    }
-}
+@media (min-width: 1024px) {}
 
 /* xl */
-@media (min-width: 1280px) {
-    
-}
+@media (min-width: 1280px) {}
 
 /* xxl */
-@media (min-width: 1536px) {
-    
-}
+@media (min-width: 1536px) {}
