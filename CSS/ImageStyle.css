@@ -17,7 +17,7 @@
      Leichter Zoom auf das Bild 
 }*/
 
-#BVB {
+.image-container {
     padding-top: 30px;
     padding-bottom: 10px;
     width: 80%;
@@ -33,7 +33,7 @@
 
 }
 
-#BVB::before {
+.image-container::before {
     content: "";
     position: absolute;
     top: 0;

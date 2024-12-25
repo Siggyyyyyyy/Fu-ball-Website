@@ -73,9 +73,20 @@ body {
     display: flex;
     flex-direction: column;
     /* Standard: Untereinander */
-    border: 1px solid red;
 }
 
+/* Versteckte Elemente */
+.hidden {
+    opacity: 0;
+    transform: translateY(50px);
+    transition: opacity 0.6s ease-out, transform 0.6s ease-out;
+}
+
+/* Sichtbare Elemente */
+.show {
+    opacity: 1;
+    transform: translateY(0);
+}
 
 .container {
     width: 100%;
@@ -93,11 +104,10 @@ body {
     justify-content: center;
     text-align: center;
     padding: 20px;
-    font-family: "judson", sans-serif;
     position: relative;
 }
 
-#buttonbackground {
+.buttonbackground {
     background-color: white;
     width: 100vw;
     /* Nimmt die volle Breite des Viewports ein */

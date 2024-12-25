@@ -25,7 +25,6 @@
     align-items: center;
     /* Vertikal zentrieren */
     position: relative;
-    border: 1px solid red;
 }
 
 .logo {
@@ -173,7 +172,7 @@ body.no-scroll {
 
 .nav-left a:hover,
 .nav-right a:hover {
-    color: #484848; /* Hover-Farbe */
+    text-decoration: underline; /* Text wird unterstrichen */
 }
 
 }
