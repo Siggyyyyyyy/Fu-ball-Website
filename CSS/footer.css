@@ -23,15 +23,15 @@
 }
 
 .footer-icon {
-    width: 50px;
+    width: 40px;
     height: auto;
     margin-bottom: 0px;
 }
 
 .footer-links {
-    width: 100%;
+    width: 80%;
     /* Breite auf 100% setzen */
-    max-width: 400px;
+    max-width: 600px;
     /* Optional: Maximalbreite */
     text-align: left;
     /* Links ausrichten */
@@ -39,10 +39,10 @@
 }
 
 .footer-links p {
+    font-size: 16px;
     margin: 10px 10px;
     cursor: pointer;
     font-weight: 200;
-    font-size: 20px;
 }
 
 .footer-links hr {
@@ -69,16 +69,16 @@
     justify-content: space-around;
     /* Gleichmäßige Verteilung */
     align-items: center;
-    width: 100%;
+    width: 80%;
     /* Volle Breite */
-    max-width: 400px;
+    max-width: 600px;
     /* Optional: Maximalbreite */
     margin: 0 auto;
 }
 
 .social-icons img {
-    width: 40px;
-    height: 40px;
+    width: 30px;
+    height: 30px;
     cursor: pointer;
     transition: transform 0.2s;
 }
@@ -90,10 +90,29 @@
 
 
 /* xs */
-@media (min-width: 475px) {}
+@media (min-width: 475px) {
+    .social-icons img {
+        width: 40px;
+        height: 40px;
+    }
+
+    .footer-icon {
+        width: 50px;
+    }
+
+    .footer-links p {
+        font-size: 18px;
+    }
+}
 
 /* sm */
-@media (min-width: 640px) {}
+@media (min-width: 640px) {
+
+    .footer-links p {
+        font-size: 20px;
+    }
+
+}
 
 /* md */
 @media (min-width: 768px) {}

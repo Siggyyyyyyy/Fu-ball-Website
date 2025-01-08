@@ -28,9 +28,9 @@
 }
 
 .logo {
+    width:200px;
     margin-top: 30px;
-    width: 240px;
-    height: 110px;
+    height: auto;
 }
 
 .hamburger {
@@ -40,12 +40,13 @@
     /* Gleicher Abstand vom oberen Rand */
     right: 10px;
     /* Gleicher Abstand vom rechten Rand */
-    width: 60px;
-    height: 60px;
+    width: 40px;
+    height: auto;
     margin-right: 20px;
     cursor: pointer;
     /* Klickbar machen */
-    display: block; /* Hamburger-Menü standardmäßig sichtbar */
+    display: block;
+    /* Hamburger-Menü standardmäßig sichtbar */
 }
 
 .menu-content .close-menu {
@@ -55,10 +56,10 @@
     /* Gleicher Abstand vom oberen Rand */
     right: 10px;
     /* Gleicher Abstand vom rechten Rand */
-    width: 50px;
-    height: 50px;
-    margin-right: 45px;
-    margin-top: 5px;
+    width: 35px;
+    height: auto;
+    margin-right: 20px;
+    margin-top: 0px;
     cursor: pointer;
     /* Klickbar machen */
 }
@@ -66,8 +67,9 @@
 /* Standard: Nur das Hamburger-Menü sichtbar */
 .nav-left,
 .nav-right {
-    display: none; /* Navigation standardmäßig ausblenden */
-    
+    display: none;
+    /* Navigation standardmäßig ausblenden */
+
 }
 
 /* Hamburger-Menü-Overlay */
@@ -129,10 +131,36 @@ body.no-scroll {
 }
 
 /* xs */
-@media (min-width: 475px) {}
+@media (min-width: 475px) {
+
+    .logo {
+        width: 220px;
+    }
+
+    .hamburger{
+        width: 50px;
+    }
+
+    .menu-content .close-menu {
+        width: 45px;
+    }
+}
 
 /* sm */
-@media (min-width: 640px) {}
+@media (min-width: 640px) {
+
+    .logo {
+        width: 240px;
+    }
+
+    .hamburger{
+        width: 60px;
+    }
+
+    .menu-content .close-menu {
+        width: 55px;
+    }
+}
 
 /* md */
 @media (min-width: 768px) {}
@@ -140,40 +168,51 @@ body.no-scroll {
 /* lg */
 @media (min-width: 1024px) {
     .hamburger {
-        display: none; /* Hamburger-Menü ausblenden */
+        display: none;
+        /* Hamburger-Menü ausblenden */
     }
-    
+
     .nav-left,
-.nav-right {
-    display: flex; /* Flexbox aktivieren */
-    justify-content: space-between; /* Dynamische Verteilung mit wachsenden Abständen */
-    flex-grow: 1; /* Ermöglicht, dass die Elemente sich ausdehnen */
-    position: absolute;
-    width: 20%; /* Breite der Navigation (du kannst es anpassen) */
-}
+    .nav-right {
+        display: flex;
+        /* Flexbox aktivieren */
+        justify-content: space-between;
+        /* Dynamische Verteilung mit wachsenden Abständen */
+        flex-grow: 1;
+        /* Ermöglicht, dass die Elemente sich ausdehnen */
+        position: absolute;
+        width: 20%;
+        /* Breite der Navigation (du kannst es anpassen) */
+    }
 
-.nav-left {
-    left: 10%; /* Links vom Logo */
-    gap: 50px;
-}
+    .nav-left {
+        left: 10%;
+        /* Links vom Logo */
+        gap: 50px;
+    }
 
-.nav-right {
-    right: 12%; /* Rechts vom Logo */
-}
+    .nav-right {
+        right: 12%;
+        /* Rechts vom Logo */
+    }
 
-.nav-left a,
-.nav-right a {
-    text-decoration: none; /* Unterstriche entfernen */
-    color: rgb(255, 255, 255); /* Linkfarbe */
-    font-size: 20px; /* Schriftgröße */
-    font-weight: 100;
-    transition: color 0.3s ease;
-}
+    .nav-left a,
+    .nav-right a {
+        text-decoration: none;
+        /* Unterstriche entfernen */
+        color: rgb(255, 255, 255);
+        /* Linkfarbe */
+        font-size: 20px;
+        /* Schriftgröße */
+        font-weight: 100;
+        transition: color 0.3s ease;
+    }
 
-.nav-left a:hover,
-.nav-right a:hover {
-    text-decoration: underline; /* Text wird unterstrichen */
-}
+    .nav-left a:hover,
+    .nav-right a:hover {
+        text-decoration: underline;
+        /* Text wird unterstrichen */
+    }
 
 }
 

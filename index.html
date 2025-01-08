@@ -41,7 +41,6 @@
         </div>
     </section>
 
-
     <!-- Overlay-Menü -->
     <div id="hamburger-menu">
         <div class="menu-content">
@@ -52,35 +51,37 @@
             <a href="#faq">FAQ</a>
         </div>
     </div>
-
     <!--HEADER-->
 
     <div class="video-background-container">
         <!-- Overlay-Inhalt -->
         <div class="overlay-content">
-
             <div class="head-container">
-
                 <div class="header-head-text">
-                    <p> Unser Fußball - <br> basisnah </p>
+                    <p>Unser Fußball - <span id="animated-text">basisnah</span></p>
                 </div>
                 <div class="header-text">
-                    <p> Der Profifußball braucht einen grundlegenden Wandel.
+                    <p>Der Profifußball braucht einen grundlegenden Wandel.
                         Punktuelle Änderungen reichen nicht
-                        – wir wollen einen zeitgemäßen Fußball! </p>
+                        <br> – wir wollen einen zeitgemäßen Fußball!
+                    </p>
                 </div>
             </div>
         </div>
         <!-- Hintergrundvideo -->
-        <video autoplay muted loop>
+        <video autoplay muted loop id="hochkant" style="display:">
             <source src="MP4/Protestzusammenschnitt Hochkant.mp4" type="video/mp4">
+            Ihr Browser unterstützt das Video-Tag nicht.
+        </video>
+        <video autoplay muted loop id="quer" style="display: none;">
+            <source src="MP4/Protestzusammenschnitt Quer.mp4" type="video/mp4">
             Ihr Browser unterstützt das Video-Tag nicht.
         </video>
         <!-- Linear Gradient Overlay -->
         <div class="video-gradient"></div>
     </div>
 
-    <div class="space" style="padding-top: 300px">
+    <div class="space" style="padding-top: 200px">
     </div>
 
     <div class="statement-container">
@@ -142,7 +143,7 @@
         </div>
     </div>
 
-    <div class="space" style="padding-top: 300px">
+    <div class="space" style="padding-top: 200px">
     </div>
 
     <div class="problem-container">
@@ -150,14 +151,23 @@
             <p> Und sein Problem.... </p>
         </div>
         <div class="problem">
-            <div class="problem-headtext hidden hidden">
+            <div class="problem-headtext hidden">
                 <p> Ein unfaires Spiel </p>
             </div>
             <div class="problem-text hidden">
                 <p> Faire Rahmenbedingungen sind essenziell für einen attraktiven Wettbewerb.
                     Doch die Kluft zwischen großen und kleinen Vereinen wird immer größer,
                     während gleichzeitig neue Probleme wie die wachsende Verbreitung von
-                    <span class="bold">Multi-Club-Ownership </span>
+                    <span class="tooltip">
+                        <span class="bold">Multi-Club-Ownership </span>
+                        <span class="tooltip-text">
+                            Bei einem MCO besitzt ein Investor mehrere Fußballclubs.
+                            Diese können auf der ganzen Welt verteilt sein,
+                            gehören aber oft zu einem gemeinsamen Netzwerk oder
+                            einer Unternehmensgruppe, bei dem Transfers,
+                            Strategien und Ressourcen zentral gesteuert werden.
+                        </span>
+                    </span>
                     (MCO) den fairen Wettbewerb gefährden. <br>
                     Um den Wettbewerb gerechter und ausgeglichener zu gestalten,
                     sind tiefgreifende Veränderungen notwendig – sowohl auf nationaler
@@ -186,16 +196,31 @@
                 <p> Fehlende Weitsicht </p>
             </div>
             <div class="problem-text hidden">
-                <p> Kurzfristiges Denken und unverantwortliches Wirtschaften dürfen der Vergangenheit angehören.
+                <p>
+                    Kurzfristiges Denken und unverantwortliches Wirtschaften dürfen der Vergangenheit angehören.
                     Der Fußball muss sich zukunftsfähig aufstellen, mit eingetragenen Vereinen als Basis
-                    und demokratisch-transparenten Entscheidungsprozessen. <br> Dank der
-                    <span class="bold">50+1-Regel</span>
-                    bleiben die Vereine in den Händen ihrer Mitglieder.
+                    und demokratisch-transparenten Entscheidungsprozessen. Dank der
+                    <span class="tooltip">
+                        <span class="bold">50+1-Regel</span>
+                        <span class="tooltip-text">
+                            Wenn ein Fußballverein seine Profiabteilung ausgliedert
+                            und fortan an dieser AG, GmbH oder einer anderen Rechtsform
+                            Anteile erworben werden können, müssen immer 50 Prozent und
+                            ein Anteil beim Mutterverein verbleiben.
+                            Somit soll garantiert werden, dass der Verein immer die
+                            Mehrheit hält und diese nicht bei vereinsfremden Investoren
+                            landet. Die letzten Entscheidungen - so zumindest das Ziel
+                            treffen somit immer die Mitglieder des Vereins.
+                            Die Regel ist auch in der Satzung des DFB und der DFL festgeschrieben.
+                        </span>
+                    </span>
+                    bleiben die Vereine in den Händen ihrer Mitglieder.<br>
                     Ein nachhaltiges Wirtschaften, das auf langfristige Stabilität
                     ausgelegt ist, sowie der Aufbau von Rücklagen müssen fester Bestandteil der
                     Lizenzierungsverfahren sein, um finanzielle Sicherheit in allen Ligen zu gewährleisten.
                 </p>
             </div>
+
             <div class="problem-headtext hidden">
                 <p> Fußball ohne Seele </p>
             </div>
@@ -213,17 +238,17 @@
         </div>
     </div>
 
-    <div class="space" style="padding-top: 300px">
+    <div class="space" style="padding-top: 200px">
     </div>
 
     <div class="container" id="calltoaction">
         <div class="description hidden">
-            <p>Weitermachen wie vor der Krise darf keine Option sein. 
-                Wir wollen nicht zurück zu einem kaputten System. 
+            <p>Weitermachen wie vor der Krise darf keine Option sein.
+                Wir wollen nicht zurück zu einem kaputten System.
                 Wir fordern Vereine und Verbände auf, jetzt zu handeln.
-                Dazu braucht es einen glaubhaften Grundsatzbeschluss 
-                sowie die Einleitung konkreter Reformen: 
-                Die Zukunft des Fußballs muss grundlegend neu 
+                Dazu braucht es einen glaubhaften Grundsatzbeschluss
+                sowie die Einleitung konkreter Reformen:
+                Die Zukunft des Fußballs muss grundlegend neu
                 gestaltet werden
                 <br><br>– basisnah, nachhaltig und zeitgemäß.
             </p>
@@ -242,6 +267,7 @@
     <section id="footer">
         <div class="footer-container">
             <div class="footer-message">
+
                 <img src="PNG/Megaphon.png" alt="Megaphone Icon" class="footer-icon">
                 <p>Forder auch deinen Verein auf sich stark für einen besseren Fußball zu machen</p>
             </div>

@@ -8,6 +8,7 @@ body {
     font-family: 'Galano', sans-serif;
     color: white;
     background-color: black;
+    overflow-x: hidden;
 }
 
 .video-background-container {
@@ -19,11 +20,11 @@ body {
     justify-content: flex-end;
     /* Head-Container an den unteren Rand verschieben */
     width: 100%;
-    height: 600px;
+    height: 90vh;
     /* Feste Höhe des Containers */
     overflow: hidden;
     /*border: 1px solid red;*/
-    margin-top: 50px;
+    margin-top: 0px;
 }
 
 .video-background-container::before {
@@ -35,8 +36,8 @@ body {
     width: 100%;
     height: 100%;
     background:
-        linear-gradient(rgb(0, 0, 0) 12%, rgba(0, 0, 0, 0) 70%),
-        linear-gradient(rgba(0, 0, 0, 0) 60%, rgba(0, 0, 0, 1) 100%);
+        linear-gradient(rgb(0, 0, 0) 22%, rgba(0, 0, 0, 0) 70%),
+        linear-gradient(rgba(0, 0, 0, 0) 60%, rgba(0, 0, 0, 1) 80%);
     z-index: 1;
     /* Stellt sicher, dass der Verlauf über dem Video liegt */
     pointer-events: none;
@@ -64,7 +65,7 @@ body {
     transform: translateX(-50%);
     z-index: 1;
     color: white;
-    padding-bottom: 2rem;
+    padding-bottom: rem;
     /* Abstand für den Text */
 
 }
@@ -156,10 +157,36 @@ body {
 
 
 /* xs */
-@media (min-width: 475px) {}
+@media (min-width: 475px) {
+
+    .video-background-container::before {
+        background:
+            linear-gradient(rgb(0, 0, 0) 12%, rgba(0, 0, 0, 0) 70%),
+            linear-gradient(rgba(0, 0, 0, 0) 60%, rgb(0, 0, 0) 80%);
+    }
+
+    .video-background-container {
+    margin-top: 20px;
+    }
+
+    .overlay-content {
+        padding-bottom: 11rem;
+    }
+}
 
 /* sm */
-@media (min-width: 640px) {}
+@media (min-width: 640px) {
+
+    .video-background-container::before {
+        background:
+            linear-gradient(rgb(0, 0, 0) 12%, rgba(0, 0, 0, 0) 70%),
+            linear-gradient(rgba(0, 0, 0, 0) 60%, rgb(0, 0, 0) 100%);
+    }
+
+    .overlay-content {
+        padding-bottom: 2rem;
+    }
+}
 
 /* md */
 @media (min-width: 768px) {}
@@ -182,10 +209,23 @@ body {
         /* Abstand zwischen den Items */
         margin-right: -1rem;
     }
+
+
+
 }
 
 /* xl */
-@media (min-width: 1280px) {}
+@media (min-width: 1280px) {
+
+    #quer {
+        display: block !important;
+    }
+
+    #hochkant {
+        display: none !important;
+    }
+
+}
 
 /* xxl */
 @media (min-width: 1536px) {}

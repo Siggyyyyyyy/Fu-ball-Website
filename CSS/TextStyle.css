@@ -1,5 +1,5 @@
 .header-head-text {
-    font-size: 45px;
+    font-size: 34px;
     margin-top: 20px;
     margin-bottom: 10px;
     font-weight: 600;
@@ -7,37 +7,38 @@
 }
 
 .header-text {
+    font-size: 15px;
     font-weight: 200;
     padding-bottom: 10px;
 }
 
 .statements-header {
+    font-size: 26px;
     text-align: center;
-    font-size: 25px;
     font-weight: 400;
 }
 
 .statement-headtext {
+    font-size: 17px;
     width: 80%;
     padding-bottom: 5px;
     margin-left: auto;
     margin-right: auto;
     font-weight: 400;
-    font-size: 17px;
 }
 
 .statement-text {
+    font-size: 13px;
     width: 80%;
     margin-left: auto;
     margin-right: auto;
     font-weight: 100;
-    font-size: 13px;
     margin-bottom: 20px;
 }
 
 .problem-header {
+    font-size: 26px;
     text-align: center;
-    font-size: 25px;
     font-weight: 400;
     padding-bottom: 20px;
 }
@@ -49,23 +50,49 @@
     margin-left: auto;
     margin-right: auto;
     font-weight: 400;
-    font-size: 20px;
+    font-size: 18px;
+    max-width: 900px;
 }
 
 .problem-text {
-    width: 70%;
+    width: 67%;
     margin-left: auto;
     margin-right: auto;
     font-weight: 100;
     font-size: 13px;
     margin-bottom: 20px;
-    max-width: 800px;
-    /* Maximale Breite, z.B. 800px */
+    max-width: 785px;
 }
 
+.tooltip {
+    position: relative;
+    display: inline-block;
+    cursor: pointer;
+}
 
-.description {
-    font-weight: 100;
+.tooltip-text {
+    visibility: hidden;
+    width: 200px;
+    /* Breite des Pop-ups */
+    background-color: rgba(72, 72, 72, 1);
+    color: #fff;
+    text-align: center;
+    padding: 8px;
+    border-radius: 5px;
+    position: absolute;
+    z-index: 1;
+    bottom: 120%;
+    /* Über dem Wort */
+    left: 50%;
+    transform: translateX(-50%);
+    opacity: 0;
+    transition: opacity 0.5s;
+    font-size: 0.9rem;
+}
+
+.tooltip:hover .tooltip-text {
+    visibility: visible;
+    opacity: 1;
 }
 
 .bold {
@@ -73,25 +100,201 @@
 }
 
 .description {
+    font-size: 13px;
     width: 80%;
     font-weight: 200;
     max-width: 600px;
-    /* Optional: Maximale Breite für bessere Lesbarkeit */
     margin-bottom: 20px;
-    /* Abstand unter dem Text */
 }
 
+#animated-text {
+    display: inline-block;
+    transition: opacity 0.5s ease-in-out;
+}
+
+.hiddenn {
+    opacity: 0;
+}
+
+
+
+
 /* xs */
-@media (min-width: 475px) {}
+@media (min-width: 475px) {
+
+    .header-text {
+        font-size: 17px;
+    }
+
+    .header-head-text {
+        font-size: 40px;
+    }
+
+    .statements-header {
+        font-size: 28px;
+    }
+
+    .statement-headtext {
+        font-size: 18px;
+    }
+
+    .statement-text {
+        font-size: 14px;
+    }
+
+    .problem-header {
+        font-size: 28px;
+    }
+
+    .problem-text {
+        font-size: 14px;
+    }
+
+    .problem-headtext {
+        font-size: 20px;
+    }
+
+    .tooltip-text {
+        width: 250px;
+    }
+
+    .description {
+        font-size: 14px;
+    }
+}
 
 /* sm */
-@media (min-width: 640px) {}
+@media (min-width: 640px) {
+
+    .header-text {
+        font-size: 20px;
+    }
+
+    .header-head-text {
+        font-size: 45px;
+    }
+
+    .statements-header {
+        font-size: 30px;
+    }
+
+    .statement-headtext {
+        font-size: 19px;
+    }
+
+    .statement-text {
+        font-size: 15px;
+    }
+
+    .problem-header {
+        font-size: 30px;
+    }
+
+    .problem-text {
+        font-size: 16px;
+    }
+
+    .problem-headtext {
+        font-size: 22px;
+    }
+
+    .tooltip-text {
+        width: 300px;
+    }
+
+    .description {
+        font-size: 16px;
+    }
+}
 
 /* md */
-@media (min-width: 768px) {}
+@media (min-width: 768px) {
+
+    .header-text {
+        font-size: 22px;
+    }
+
+    .header-head-text {
+        font-size: 48px;
+    }
+
+    .statements-header {
+        font-size: 35px;
+    }
+
+    .statement-headtext {
+        font-size: 25px;
+    }
+
+    .statement-text {
+        font-size: 20px;
+    }
+
+    .problem-header {
+        font-size: 35px;
+    }
+
+    .problem-text {
+        font-size: 20px;
+    }
+
+    .problem-headtext {
+        font-size: 26px;
+    }
+
+    .tooltip-text {
+        font-size: 1.2rem;
+    }
+
+    .description {
+        font-size: 20px;
+    }
+}
 
 /* lg */
-@media (min-width: 1024px) {}
+@media (min-width: 1024px) {
+
+    .header-text {
+        font-size: 25px;
+    }
+
+    .header-head-text {
+        font-size: 50px;
+    }
+
+    .statements-header {
+        font-size: 40px;
+    }
+
+    .statement-headtext {
+        font-size: 25px;
+    }
+
+    .statement-text {
+        font-size: 20px;
+    }
+
+    .problem-header {
+        font-size: 40px;
+    }
+
+    .problem-text {
+        font-size: 20px;
+    }
+
+    .problem-headtext {
+        font-size: 26px;
+    }
+
+    .tooltip-text {
+        font-size: 1.2rem;
+    }
+
+    .description {
+        font-size: 20px;
+    }
+
+}
 
 /* xl */
 @media (min-width: 1280px) {}
