@@ -14,14 +14,10 @@ body {
 .video-background-container {
     position: relative;
     display: flex;
-    /* Flexbox aktivieren */
-    flex-direction: column;
-    /* Vertikale Ausrichtung der Kinder */
+    flex-direction: column; /* Vertikalel ausgerichtet */
     justify-content: flex-end;
-    /* Head-Container an den unteren Rand verschieben */
     width: 100%;
     height: 90vh;
-    /* Feste Höhe des Containers */
     overflow: hidden;
     /*border: 1px solid red;*/
     margin-top: 0px;
@@ -29,7 +25,6 @@ body {
 
 .video-background-container::before {
     content: "";
-    /* Erforderlich, um das Pseudo-Element sichtbar zu machen */
     position: absolute;
     top: 0;
     left: 0;
@@ -41,21 +36,16 @@ body {
     z-index: 1;
     /* Stellt sicher, dass der Verlauf über dem Video liegt */
     pointer-events: none;
-    /* Macht das Pseudo-Element "durchklickbar", sodass keine Interaktion blockiert wird */
+    /* Macht das Pseudo-Element nicht anklickbar */
 }
 
 .video-background-container video {
     position: absolute;
     top: 50%;
-    /* Zentriert das Video vertikal */
     left: 50%;
-    /* Zentriert das Video horizontal */
     width: 100%;
-    /* Breite passt sich an die Website-Breite an */
     height: auto;
-    /* Höhe wird automatisch berechnet */
     transform: translate(-50%, -50%);
-    /* Korrekte Zentrierung */
 }
 
 .overlay-content {
@@ -66,24 +56,21 @@ body {
     z-index: 1;
     color: white;
     padding-bottom: rem;
-    /* Abstand für den Text */
-
 }
 
 .statement {
     display: flex;
     flex-direction: column;
-    /* Standard: Untereinander */
 }
 
-/* Versteckte Elemente */
+/* pop-up-elemente */
 .hidden {
     opacity: 0;
     transform: translateY(50px);
     transition: opacity 0.6s ease-out, transform 0.6s ease-out;
 }
 
-/* Sichtbare Elemente */
+/* pop-up-elemente */
 .show {
     opacity: 1;
     transform: translateY(0);
@@ -111,14 +98,11 @@ body {
 .buttonbackground {
     background-color: white;
     width: 100vw;
-    /* Nimmt die volle Breite des Viewports ein */
     height: 100px;
     display: flex;
-    /* Flexbox, um Inhalte im Container zu zentrieren */
     justify-content: center;
     align-items: center;
     margin: 0;
-    /* Entferne alle unerwünschten Ränder */
     position: relative;
     left: 0;
 }
@@ -132,13 +116,11 @@ body {
     cursor: pointer;
     transition: all 0.3s ease;
     font-family: "Galano", sans-serif;
-    /* Font-Familie hinzugefügt */
     margin: 0 auto;
 }
 
 #calltoaction button a {
     font-weight: 400;
-    /* Falls nötig */
 }
 
 #calltoaction button:hover {
@@ -148,9 +130,7 @@ body {
 
 #calltoaction .description {
     max-width: 600px;
-    /* Beschränkt die Textbreite */
     margin-bottom: 20px;
-    /* Abstand zwischen Text und Button */
     text-align: center;
 }
 
@@ -166,7 +146,7 @@ body {
     }
 
     .video-background-container {
-    margin-top: 20px;
+        margin-top: 20px;
     }
 
     .overlay-content {
@@ -195,18 +175,16 @@ body {
 @media (min-width: 1024px) {
     .statement {
         flex-wrap: wrap;
-        /* Elemente umbrechen lassen */
+        /* elemente umbrechen lassen */
         flex-direction: row;
-        /* Ab 1024px: In einer Reihe */
+        /* in einer Reihe */
         justify-content: center;
-        /* Zentrierung innerhalb des Containers */
     }
 
     .statement-item {
         width: calc(50% - 3rem);
-        /* Zwei Items pro Reihe mit Abstand */
+        /* zwei bilder pro reihe mit abstand */
         margin-left: -1rem;
-        /* Abstand zwischen den Items */
         margin-right: -1rem;
     }
 

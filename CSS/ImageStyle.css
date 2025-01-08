@@ -2,13 +2,10 @@
     padding-top: 20px;
     padding-bottom: 10px;
     width: 100%;
-    /* Bild füllt den Container */
     height: auto;
-    /* Die Höhe des Bildes wird automatisch angepasst */
     object-fit: cover;
     object-position: center;
     /*transition: transform 0.3s ease;
-     Sanfter Übergang beim Hover */
 
 }
 
@@ -22,16 +19,11 @@
     padding-top: 30px;
     padding-bottom: 10px;
     width: 80%;
-    /* Das Bild nimmt 80% der Breite ein */
     height: auto;
-    /* Die Höhe wird automatisch angepasst, um das Seitenverhältnis zu wahren */
     overflow: hidden;
-    /* Überflüssige Bildteile ausblenden */
     position: relative;
     left: 50%;
     transform: translateX(-50%);
-    /* Zentriere den Container */
-
 }
 
 .image-container::before {
@@ -43,32 +35,25 @@
     height: 100%;
     background:
         linear-gradient(rgba(255, 255, 255, 0) 50%, rgb(0, 0, 0) 100%);
-    /* Linearer Gradient von oben nach unten
-    linear-gradient(rgba(0, 0, 0, 0) 80%, rgba(0, 0, 0, 1) 100%);  Linearer Gradient von unten nach oben*/
+    /* linear gradient von oben nach unten
+    linear-gradient(rgba(0, 0, 0, 0) 80%, rgba(0, 0, 0, 1) 100%);  linear gradient von unten nach oben*/
 
 }
 
 .video-container {
     padding-top: 30px;
     width: 100vw;
-    /* 100% der Viewport-Breite */
     height: max-content;
-    /* Höhe einstellen */
     overflow: hidden;
-    /* Überflüssige Bildteile ausblenden */
     position: relative;
     left: 50%;
     transform: translateX(-50%);
-    /* Zentriere das Bild */
 }
 
 .video-container video {
     width: 100%;
-    /* Passt das Video an die Breite des Containers an */
     height: auto;
-    /* Bewahrt das Seitenverhältnis des Videos */
     display: block;
-    /* Entfernt eventuelle Inline-Abstände */
 }
 
 #protest::before {
@@ -80,8 +65,8 @@
     height: 100%;
     background:
         linear-gradient(rgb(0, 0, 0) 12%, rgba(255, 255, 255, 0) 70%);
-    /* Linearer Gradient von oben nach unten
-    linear-gradient(rgba(0, 0, 0, 0) 80%, rgba(0, 0, 0, 1) 100%);  Linearer Gradient von unten nach oben*/
+    /* linear gradient von oben nach unten
+    linear-gradient(rgba(0, 0, 0, 0) 80%, rgba(0, 0, 0, 1) 100%);  linear gradient von unten nach oben*/
     z-index: 1;
 }
 

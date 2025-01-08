@@ -1,7 +1,5 @@
 #footer {
-
     background: linear-gradient(rgba(72, 72, 72, 0) 10%, rgb(72, 72, 72) 60%);
-    ;
     color: white;
     padding: 40px 20px;
     font-family: "Galano", sans-serif;
@@ -30,11 +28,8 @@
 
 .footer-links {
     width: 80%;
-    /* Breite auf 100% setzen */
     max-width: 600px;
-    /* Optional: Maximalbreite */
     text-align: left;
-    /* Links ausrichten */
     margin-bottom: 10px;
 }
 
@@ -47,16 +42,13 @@
 
 .footer-links hr {
     width: 100%;
-    /* Striche breiter gemacht */
     margin: 0px 0;
-    /* Etwas engerer Abstand */
     border: 1px solid white;
 }
 
 .footer-social {
     margin-top: 20px;
     width: 100%;
-    /* Volle Breite für gleichmäßige Verteilung */
 }
 
 .footer-social p {
@@ -67,12 +59,9 @@
 .social-icons {
     display: flex;
     justify-content: space-around;
-    /* Gleichmäßige Verteilung */
     align-items: center;
     width: 80%;
-    /* Volle Breite */
     max-width: 600px;
-    /* Optional: Maximalbreite */
     margin: 0 auto;
 }
 

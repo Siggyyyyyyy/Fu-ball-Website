@@ -1,16 +1,10 @@
-/* HEADER-Bereich */
 #header {
     position: absolute;
-    /* Absolut über das Video legen */
     top: 0;
-    /* Ganz oben im Viewport */
     left: 0;
     width: 100%;
-    /* Über die gesamte Breite */
     z-index: 3;
-    /* Über dem Video und dem Verlauf */
     background: none;
-    /* Kein Hintergrund, um das Video sichtbar zu halten */
 }
 
 .header-container {
@@ -21,9 +15,8 @@
     padding-right: 0.5rem;
     display: flex;
     justify-content: center;
-    /* Zentriert das Logo */
+    /* zentriert das logo (big problem) */
     align-items: center;
-    /* Vertikal zentrieren */
     position: relative;
 }
 
@@ -35,66 +28,46 @@
 
 .hamburger {
     position: absolute;
-    /* Position absolut zum Elterncontainer */
     top: 50px;
-    /* Gleicher Abstand vom oberen Rand */
     right: 10px;
-    /* Gleicher Abstand vom rechten Rand */
     width: 40px;
     height: auto;
     margin-right: 20px;
     cursor: pointer;
-    /* Klickbar machen */
     display: block;
-    /* Hamburger-Menü standardmäßig sichtbar */
 }
 
 .menu-content .close-menu {
     position: absolute;
-    /* Position absolut zum Elterncontainer */
     top: 50px;
-    /* Gleicher Abstand vom oberen Rand */
     right: 10px;
-    /* Gleicher Abstand vom rechten Rand */
     width: 35px;
     height: auto;
     margin-right: 20px;
     margin-top: 0px;
     cursor: pointer;
-    /* Klickbar machen */
 }
 
-/* Standard: Nur das Hamburger-Menü sichtbar */
 .nav-left,
 .nav-right {
     display: none;
-    /* Navigation standardmäßig ausblenden */
-
 }
 
-/* Hamburger-Menü-Overlay */
 #hamburger-menu {
     position: fixed;
-    /* Über das gesamte Fenster legen */
     top: 0;
     right: -100%;
-    /* Start außerhalb des Bildschirms */
+    /* außerhalb des bildschirms */
     width: 100%;
     height: 100%;
     background: #484848;
-    /* Hintergrundfarbe des Menüs */
     display: flex;
     padding-top: 10px;
     flex-direction: column;
-    /* Elemente untereinander anordnen */
     justify-content: center;
-    /* Inhalte vertikal zentrieren */
     align-items: center;
-    /* Inhalte horizontal zentrieren */
     z-index: 1000;
-    /* Über alles andere legen */
     transition: right 1s ease-in-out;
-    /* Sanfte Bewegung */
     overflow: hidden;
 }
 
@@ -106,7 +79,6 @@
 
 }
 
-/* Menü-Links */
 .menu-content a {
     text-decoration: none;
     color: white;
@@ -118,16 +90,14 @@
     text-align: left;
 }
 
-/* Menü sichtbar */
 #hamburger-menu.active {
     right: 0;
-    /* Menü auf Bildschirm schieben */
+    /* menü auf bildschirm schieben */
 }
 
-/* Body fixieren */
 body.no-scroll {
     overflow: hidden;
-    /* Scrollen deaktivieren */
+    /* scrollen wird deaktiviert */
 }
 
 /* xs */
@@ -169,41 +139,32 @@ body.no-scroll {
 @media (min-width: 1024px) {
     .hamburger {
         display: none;
-        /* Hamburger-Menü ausblenden */
+        /* deaktiviert hamburger */
     }
 
     .nav-left,
     .nav-right {
         display: flex;
-        /* Flexbox aktivieren */
         justify-content: space-between;
-        /* Dynamische Verteilung mit wachsenden Abständen */
         flex-grow: 1;
-        /* Ermöglicht, dass die Elemente sich ausdehnen */
         position: absolute;
         width: 20%;
-        /* Breite der Navigation (du kannst es anpassen) */
     }
 
     .nav-left {
         left: 10%;
-        /* Links vom Logo */
         gap: 50px;
     }
 
     .nav-right {
         right: 12%;
-        /* Rechts vom Logo */
     }
 
     .nav-left a,
     .nav-right a {
         text-decoration: none;
-        /* Unterstriche entfernen */
         color: rgb(255, 255, 255);
-        /* Linkfarbe */
         font-size: 20px;
-        /* Schriftgröße */
         font-weight: 100;
         transition: color 0.3s ease;
     }
@@ -211,7 +172,6 @@ body.no-scroll {
     .nav-left a:hover,
     .nav-right a:hover {
         text-decoration: underline;
-        /* Text wird unterstrichen */
     }
 
 }
