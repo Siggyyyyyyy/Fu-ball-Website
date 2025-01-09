@@ -242,8 +242,8 @@
     }
 
     .tooltip-text {
-        font-size: 1.2rem;
         width: 350px;
+        font-size: 1.2rem;
     }
 
     .description {
@@ -287,8 +287,8 @@
     }
 
     .tooltip-text {
+        width: 400px;
         font-size: 1.2rem;
-        width: 400x;
     }
 
     .description {
@@ -301,7 +301,7 @@
 @media (min-width: 1280px) {
 
     .tooltip-text {
-        width: 450x;
+        width: 450px;
     }
 }
 
@@ -309,6 +309,6 @@
 @media (min-width: 1536px) {
 
     .tooltip-text {
-        width: 700x;
+        width: 500px;
     }
 }
