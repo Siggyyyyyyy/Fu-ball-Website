@@ -243,6 +243,7 @@
 
     .tooltip-text {
         font-size: 1.2rem;
+        width: 350px;
     }
 
     .description {
@@ -287,6 +288,7 @@
 
     .tooltip-text {
         font-size: 1.2rem;
+        width: 400x;
     }
 
     .description {
@@ -296,7 +298,17 @@
 }
 
 /* xl */
-@media (min-width: 1280px) {}
+@media (min-width: 1280px) {
+
+    .tooltip-text {
+        width: 450x;
+    }
+}
 
 /* xxl */
-@media (min-width: 1536px) {}
+@media (min-width: 1536px) {
+
+    .tooltip-text {
+        width: 700x;
+    }
+}
