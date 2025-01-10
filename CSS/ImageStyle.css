@@ -5,15 +5,27 @@
     height: auto;
     object-fit: cover;
     object-position: center;
-    /*transition: transform 0.3s ease;*/
-
+    transition: transform 0.3s ease;
 }
 
-/*
-.image-container:hover .textpic {
+
+.textpic:hover {
     transform: scale(1.1);
-     Leichter Zoom auf das Bild 
-}*/
+}
+
+.textpic {
+    padding-top: 20px;
+    padding-bottom: 10px;
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+    object-position: center;
+    transition: transform 1s ease; /* Smooth-Zoom-Effekt */
+}
+
+.image-container:hover .textpic {
+    transform: scale(1.1); /* Heranzoomen beim Hover */
+}
 
 .image-container {
     padding-top: 30px;
@@ -33,12 +45,11 @@
     left: 0;
     width: 100%;
     height: 100%;
-    background:
-        linear-gradient(rgba(255, 255, 255, 0) 50%, rgb(0, 0, 0) 100%);
+    pointer-events: none; /* Hover-Interaktion mit dem Bild ermöglichen */
+    background: linear-gradient(rgba(255, 255, 255, 0) 50%, rgb(0, 0, 0) 100%);
     /* linear gradient von oben nach unten
-    linear-gradient(rgba(0, 0, 0, 0) 80%, rgba(0, 0, 0, 1) 100%);  linear gradient von unten nach oben*/
+       linear-gradient(rgba(0, 0, 0, 0) 80%, rgba(0, 0, 0, 1) 100%); 
 
-}
 
 .video-container {
     padding-top: 30px;
