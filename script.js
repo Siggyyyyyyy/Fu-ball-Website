@@ -1,5 +1,5 @@
 document.addEventListener('DOMContentLoaded', function () {
-    // Hamburger-Menü
+    // hamburgermenü
     const hamburgerIcon = document.getElementById('hamburger-icon');
     const hamburgerMenu = document.getElementById('hamburger-menu');
     const closeMenu = document.getElementById('close-menu');
@@ -14,7 +14,7 @@ document.addEventListener('DOMContentLoaded', function () {
         document.body.classList.remove('no-scroll');
     });
 
-    // Fade-In/Out-Animation
+    // fadein animation (tauscht klassen aus)
     const hiddenElements = document.querySelectorAll(".hidden");
     const observer = new IntersectionObserver(
         (entries, observer) => {
@@ -31,30 +31,30 @@ document.addEventListener('DOMContentLoaded', function () {
     );
     hiddenElements.forEach((el) => observer.observe(el));
 
-    // Wörter wechseln
+    // wörterwechsel im header
     const words = ["basisnah", "nachhaltig", "zeitgemäß"];
     let currentIndex = 0;
 
     const animatedText = document.getElementById("animated-text");
     const updateTextContent = () => {
-        animatedText.classList.add("hiddenn");
+        animatedText.classList.add("hiddenwordswitch");
         setTimeout(() => {
             currentIndex = (currentIndex + 1) % words.length;
             animatedText.textContent = words[currentIndex];
-            animatedText.classList.remove("hiddenn");
+            animatedText.classList.remove("hiddenwordswitch");
         }, 500); // Muss mit CSS-Transition übereinstimmen
     };
 
     setInterval(updateTextContent, 2400);
 
-    // Dynamischer Zeilenumbruch
     const animatedTextContainer = document.querySelector('.header-head-text p');
 
     const updateLayout = () => {
         const viewportWidth = window.innerWidth;
 
-        // Br und Layout anpassen, ohne `animatedText` neu zu erstellen
-        if (viewportWidth <= 768) {
+        // macht, dass <br> automatisch ab einer gewissen breite hinzugefügt wird 
+        // weil "basisnah" ein kürzeres wort ist uns sonst bie bestimmten Gröen nicht den absazu macht
+        if (viewportWidth <= 800) {
             if (!animatedTextContainer.innerHTML.includes("<br>")) {
                 animatedTextContainer.innerHTML = `Unser Fußball -<br>`;
                 animatedTextContainer.appendChild(animatedText);
@@ -67,23 +67,25 @@ document.addEventListener('DOMContentLoaded', function () {
         }
     };
 
-    // Initial überprüfen und bei Fenstergröße ändern
     updateLayout();
     window.addEventListener('resize', updateLayout);
+
+
+
 
     const tooltips = document.querySelectorAll('.tooltip');
 
     tooltips.forEach(tooltip => {
         const tooltipText = tooltip.querySelector('.tooltip-text');
 
-        // Funktion für Touch-Geräte (Click)
+        // für touchgeräte
         const handleTouch = (e) => {
             tooltipText.style.visibility = 'visible';
             tooltipText.style.opacity = '1';
             e.stopPropagation(); // Verhindert Schließen durch document-Click
         };
 
-        // Funktion für Desktop (Hover)
+        // für desktop
         const handleMouseOver = () => {
             tooltipText.style.visibility = 'visible';
             tooltipText.style.opacity = '1';
@@ -94,18 +96,17 @@ document.addEventListener('DOMContentLoaded', function () {
             tooltipText.style.opacity = '0';
         };
 
-        // Ereignisse basierend auf Gerätetyp hinzufügen
         if ('ontouchstart' in window || navigator.maxTouchPoints) {
-            // Für Touch-Geräte
+            // für touchgeräte
             tooltip.addEventListener('click', handleTouch);
 
-            // Schließe den Tooltip bei einem Klick irgendwo anders
+            // schließt bei erneutem klick
             document.addEventListener('click', () => {
                 tooltipText.style.visibility = 'hidden';
                 tooltipText.style.opacity = '0';
             });
         } else {
-            // Für Desktop (Hover)
+            // für desktop
             tooltip.addEventListener('mouseover', handleMouseOver);
             tooltip.addEventListener('mouseout', handleMouseOut);
         }
