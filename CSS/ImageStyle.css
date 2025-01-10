@@ -70,6 +70,82 @@
     z-index: 1;
 }
 
+.problem-image-container {
+    width: 100%;
+    overflow: hidden; /* Damit das Bild nicht aus dem Container "ausschwappt" */
+    display: flex; /* Flexbox-Layout */
+    justify-content: center; /* Zentriert den Inhalt horizontal */
+}
+
+.problem-image {
+    width: 100%; /* Bild füllt die Breite der Webseite */
+    height: auto; /* Höhe passt sich an die Breite an */
+    max-width: 785px; /* Maximale Breite des Bildes */
+    max-height: 250px; /* Maximale Höhe des Bildes */
+    object-fit: cover; /* Das Bild wird zugeschnitten, um die Fläche zu füllen */
+    filter: grayscale(100%); /* Schwarzweiß-Filter */
+    margin-bottom: 100px;
+
+    /* Animation */
+    animation: floatEffect 20s ease-in-out infinite; /* Bewegung */
+}
+
+@keyframes floatEffect {
+    0% {
+        transform: translateX(0); /* Ausgangsposition */
+    }
+    25% {
+        transform: translateX(-20px); /* Bewegung nach oben */
+    }
+    50% {
+        transform: translateX(0px); /* Zurück zur Ausgangsposition */
+    }
+    75% {
+        transform: translateX(20px); /* Zurück zur Ausgangsposition */
+    }
+    100% {
+        transform: translateX(0px); /* Zurück zur Ausgangsposition */
+    }
+}
+
+.problem-image-container-reverse {
+    width: 100%;
+    overflow: hidden; /* Damit das Bild nicht aus dem Container "ausschwappt" */
+    display: flex; /* Flexbox-Layout */
+    justify-content: center; /* Zentriert den Inhalt horizontal */
+}
+
+.problem-image-reverse {
+    width: 100%; /* Bild füllt die Breite der Webseite */
+    height: auto; /* Höhe passt sich an die Breite an */
+    max-width: 785px; /* Maximale Breite des Bildes */
+    max-height: 250px; /* Maximale Höhe des Bildes */
+    object-fit: cover; /* Das Bild wird zugeschnitten, um die Fläche zu füllen */
+    filter: grayscale(100%); /* Schwarzweiß-Filter */
+    margin-bottom: 100px;
+
+    /* Animation */
+    animation: floatEffectReverse 20s ease-in-out infinite; /* Bewegung */
+}
+
+@keyframes floatEffectReverse {
+    0% {
+        transform: translateX(0); /* Ausgangsposition */
+    }
+    25% {
+        transform: translateX(20px); /* Bewegung nach oben */
+    }
+    50% {
+        transform: translateX(0px); /* Zurück zur Ausgangsposition */
+    }
+    75% {
+        transform: translateX(-20px); /* Zurück zur Ausgangsposition */
+    }
+    100% {
+        transform: translateX(0px); /* Zurück zur Ausgangsposition */
+    }
+}
+
 
 
 /* xs */

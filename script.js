@@ -26,10 +26,11 @@ document.addEventListener('DOMContentLoaded', function () {
             });
         },
         {
-            threshold: 0.8,
+            threshold: 0.7,
         }
     );
     hiddenElements.forEach((el) => observer.observe(el));
+
 
     // wörterwechsel im header
     const words = ["basisnah", "nachhaltig", "zeitgemäß"];
@@ -42,7 +43,7 @@ document.addEventListener('DOMContentLoaded', function () {
             currentIndex = (currentIndex + 1) % words.length;
             animatedText.textContent = words[currentIndex];
             animatedText.classList.remove("hiddenwordswitch");
-        }, 500); // Muss mit CSS-Transition übereinstimmen
+        }, 500); 
     };
 
     setInterval(updateTextContent, 2400);
