@@ -78,15 +78,13 @@
 }
 
 .problem-image {
-    width: 100%; /* Bild füllt die Breite der Webseite */
+    width: 110vw; /* Bild füllt die Breite der Webseite */
     height: auto; /* Höhe passt sich an die Breite an */
-    max-width: 785px; /* Maximale Breite des Bildes */
-    max-height: 250px; /* Maximale Höhe des Bildes */
+    max-width: none; /* Maximale Breite des Bildes */
+    max-height: none; /* Maximale Höhe des Bildes */
     object-fit: cover; /* Das Bild wird zugeschnitten, um die Fläche zu füllen */
     filter: grayscale(100%); /* Schwarzweiß-Filter */
     margin-bottom: 100px;
-
-    /* Animation */
     animation: floatEffect 20s ease-in-out infinite; /* Bewegung */
 }
 
@@ -116,15 +114,13 @@
 }
 
 .problem-image-reverse {
-    width: 100%; /* Bild füllt die Breite der Webseite */
+    width: 110vw; /* Bild füllt die Breite der Webseite */
     height: auto; /* Höhe passt sich an die Breite an */
-    max-width: 785px; /* Maximale Breite des Bildes */
-    max-height: 250px; /* Maximale Höhe des Bildes */
+    max-width: none; /* Maximale Breite des Bildes */
+    max-height: none; /* Maximale Höhe des Bildes */
     object-fit: cover; /* Das Bild wird zugeschnitten, um die Fläche zu füllen */
     filter: grayscale(100%); /* Schwarzweiß-Filter */
     margin-bottom: 100px;
-
-    /* Animation */
     animation: floatEffectReverse 20s ease-in-out infinite; /* Bewegung */
 }
 
@@ -155,7 +151,21 @@
 @media (min-width: 640px) {}
 
 /* md */
-@media (min-width: 768px) {}
+@media (min-width: 785px) {
+
+    .problem-image {
+        width: 67%;
+        max-width: 785px;
+        max-height: 250px;
+    }
+
+    .problem-image-reverse {
+        width: 67%;
+        max-width: 785px;
+        max-height: 250px;
+    }
+
+}
 
 /* lg */
 @media (min-width: 1024px) {}
