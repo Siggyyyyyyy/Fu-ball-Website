@@ -2,7 +2,7 @@ document.addEventListener('DOMContentLoaded', function () {
 
 
 
-    
+
     // hamburgermenü
     const hamburgerIcon = document.getElementById('hamburger-icon');
     const hamburgerMenu = document.getElementById('hamburger-menu');
@@ -171,4 +171,23 @@ document.addEventListener('DOMContentLoaded', function () {
             }, 8000);
         }
     });
+
+
+
+
+    // read more button
+    const toggleButton = document.getElementById("toggle-text");
+    const shortText = document.querySelector(".short-text");
+    const fullText = document.querySelector(".full-text");
+
+    toggleButton.addEventListener("click", () => {
+        if (fullText.classList.contains("read-more")) {
+            fullText.classList.remove("read-more");
+            toggleButton.textContent = "Weniger lesen";
+        } else {
+            fullText.classList.add("read-more");
+            toggleButton.textContent = "Mehr lesen";
+        }
+    });
+
 });

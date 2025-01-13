@@ -139,11 +139,10 @@ body {
 }
 
 .fan-statement {
-    background-color: #000000; /* Heller Hintergrund */
-    border: 3px solid #ffffff; /* Grauer Rand */
+    background-color: #000000; 
+    border: 3px solid #ffffff;
     padding: 20px;
     border-radius: 8px;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Schatten für Tiefe */
     width: 67%;
     max-width: 785px;
     margin: 20px auto;
@@ -186,6 +185,28 @@ body {
 .fan-role {
     font-size: 0.9rem;
     color: #333;
+}
+
+.read-more {
+    display: none;
+}
+
+/* Allgemeines Styling für die Fan-Statement-Box bleibt gleich */
+
+.read-more-button {
+    background: none; 
+    border: none; 
+    color: #5f5f5f; 
+    cursor: pointer; 
+    font-size: 16px; 
+    display: block; 
+    margin: 10px auto 0; 
+    text-align: center; 
+}
+
+.read-more-button:hover {
+    color: #878787; 
+    text-decoration: underline; 
 }
 
 
