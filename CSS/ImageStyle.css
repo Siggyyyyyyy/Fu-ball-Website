@@ -95,7 +95,6 @@
     max-height: none; /* Maximale Höhe des Bildes */
     object-fit: cover; /* Das Bild wird zugeschnitten, um die Fläche zu füllen */
     filter: grayscale(100%); /* Schwarzweiß-Filter */
-    margin-bottom: 100px;
     animation: floatEffect 20s ease-in-out infinite; /* Bewegung */
 }
 
@@ -131,7 +130,6 @@
     max-height: none; /* Maximale Höhe des Bildes */
     object-fit: cover; /* Das Bild wird zugeschnitten, um die Fläche zu füllen */
     filter: grayscale(100%); /* Schwarzweiß-Filter */
-    margin-bottom: 100px;
     animation: floatEffectReverse 20s ease-in-out infinite; /* Bewegung */
 }
 
