@@ -1,4 +1,8 @@
 document.addEventListener('DOMContentLoaded', function () {
+
+
+
+    
     // hamburgermenü
     const hamburgerIcon = document.getElementById('hamburger-icon');
     const hamburgerMenu = document.getElementById('hamburger-menu');
@@ -13,6 +17,9 @@ document.addEventListener('DOMContentLoaded', function () {
         hamburgerMenu.classList.remove('active');
         document.body.classList.remove('no-scroll');
     });
+
+
+
 
     // fadein animation (tauscht klassen aus)
     const hiddenElements = document.querySelectorAll(".hidden");
@@ -32,6 +39,8 @@ document.addEventListener('DOMContentLoaded', function () {
     hiddenElements.forEach((el) => observer.observe(el));
 
 
+
+
     // wörterwechsel im header
     const words = ["basisnah", "nachhaltig", "zeitgemäß"];
     let currentIndex = 0;
@@ -43,18 +52,21 @@ document.addEventListener('DOMContentLoaded', function () {
             currentIndex = (currentIndex + 1) % words.length;
             animatedText.textContent = words[currentIndex];
             animatedText.classList.remove("hiddenwordswitch");
-        }, 500); 
+        }, 500);
     };
 
     setInterval(updateTextContent, 2400);
 
+
+
+    // responsive text
     const animatedTextContainer = document.querySelector('.header-head-text p');
 
     const updateLayout = () => {
         const viewportWidth = window.innerWidth;
 
         // macht, dass <br> automatisch ab einer gewissen breite hinzugefügt wird 
-        // weil "basisnah" ein kürzeres wort ist uns sonst bie bestimmten Gröen nicht den absazu macht
+        // weil "basisnah" ein kürzeres wort ist uns sonst bie bestimmten Größen nicht den absatz macht
         if (viewportWidth <= 800) {
             if (!animatedTextContainer.innerHTML.includes("<br>")) {
                 animatedTextContainer.innerHTML = `Unser Fußball -<br>`;
@@ -74,6 +86,7 @@ document.addEventListener('DOMContentLoaded', function () {
 
 
 
+    // tooltip (chatGPT)
     const tooltips = document.querySelectorAll('.tooltip');
 
     tooltips.forEach(tooltip => {
@@ -110,6 +123,52 @@ document.addEventListener('DOMContentLoaded', function () {
             // für desktop
             tooltip.addEventListener('mouseover', handleMouseOver);
             tooltip.addEventListener('mouseout', handleMouseOut);
+        }
+    });
+
+
+
+
+    // Sounds
+    const hoverSound = new Audio('audio/Auufschrei.mp3');
+    const clickSound = new Audio('audio/jubel.mp3');
+    const button = document.getElementById('action-button');
+
+    clickSound.volume = 0.2;
+    hoverSound.volume = 0.2;
+
+    let hoverSoundPlaying = false;
+    let clickSoundPlaying = false;
+
+    button.addEventListener('mouseenter', () => {
+        if (!hoverSoundPlaying && !clickSoundPlaying) {
+            hoverSoundPlaying = true;
+            hoverSound.currentTime = 0;
+            hoverSound.play();
+
+            setTimeout(() => {
+                hoverSoundPlaying = false;
+            }, 5000);
+        }
+    });
+
+
+    button.addEventListener('click', () => {
+        if (!clickSoundPlaying) {
+
+            if (hoverSoundPlaying) {
+                hoverSound.pause();
+                hoverSoundPlaying = false;
+            }
+
+            clickSoundPlaying = true;
+            clickSound.currentTime = 0;
+            clickSound.play();
+
+
+            setTimeout(() => {
+                clickSoundPlaying = false;
+            }, 8000);
         }
     });
 });

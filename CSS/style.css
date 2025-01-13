@@ -107,6 +107,11 @@ body {
     left: 0;
 }
 
+#action-button {
+    cursor: pointer;
+    transition: transform 0.2s ease;
+}
+
 #calltoaction button {
     padding: 10px 20px;
     font-size: 16px;

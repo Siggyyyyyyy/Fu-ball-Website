@@ -95,6 +95,10 @@
     /* menü auf bildschirm schieben */
 }
 
+#hamburger-menu .menu-content a:hover {
+    text-decoration: underline; /* Beim Hovern unterstreichen */
+}
+
 body.no-scroll {
     overflow: hidden;
     /* scrollen wird deaktiviert */
