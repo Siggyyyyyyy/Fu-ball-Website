@@ -114,7 +114,6 @@ body {
 
 #calltoaction button {
     padding: 10px 20px;
-    font-size: 16px;
     background-color: rgb(255, 255, 255);
     border: 3px solid rgb(0, 0, 0);
     color: rgb(0, 0, 0);
@@ -138,6 +137,57 @@ body {
     margin-bottom: 20px;
     text-align: center;
 }
+
+.fan-statement {
+    background-color: #000000; /* Heller Hintergrund */
+    border: 3px solid #ffffff; /* Grauer Rand */
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Schatten für Tiefe */
+    width: 67%;
+    max-width: 785px;
+    margin: 20px auto;
+    font-family: Arial, sans-serif;
+}
+
+.quote {
+    font-size: 18px;
+    font-style: italic;
+    margin-bottom: 20px;
+    color: #afafaf;
+}
+
+.fan-info {
+    display: flex;
+    align-items: center;
+}
+
+.fan-photo {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%; /* kreisausschnitt */
+    object-fit: cover;
+    margin-right: 15px;
+    border: 2px solid #ddd;
+}
+
+.fan-details {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.fan-name {
+    font-weight: bold;
+    font-size: 1rem;
+    color: #484848;
+}
+
+.fan-role {
+    font-size: 0.9rem;
+    color: #333;
+}
+
 
 
 
