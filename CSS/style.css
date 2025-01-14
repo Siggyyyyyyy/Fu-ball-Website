@@ -162,8 +162,8 @@ body {
 }
 
 .fan-photo {
-    width: 80px;
-    height: 80px;
+    width: 60px;
+    height: 60px;
     border-radius: 50%; /* kreisausschnitt */
     object-fit: cover;
     margin-right: 15px;
@@ -196,7 +196,7 @@ body {
 .read-more-button {
     background: none; 
     border: none; 
-    color: #5f5f5f; 
+    color: #878787; 
     cursor: pointer; 
     font-size: 16px; 
     display: block; 
@@ -205,7 +205,7 @@ body {
 }
 
 .read-more-button:hover {
-    color: #878787; 
+    color: #5f5f5f; 
     text-decoration: underline; 
 }
 
