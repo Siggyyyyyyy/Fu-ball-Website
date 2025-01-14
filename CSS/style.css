@@ -14,7 +14,7 @@ body {
 .video-background-container {
     position: relative;
     display: flex;
-    flex-direction: column; /* Vertikalel ausgerichtet */
+    flex-direction: column; 
     justify-content: flex-end;
     width: 100%;
     height: 90vh;
@@ -152,7 +152,8 @@ body {
 .quote {
     font-size: 18px;
     font-style: italic;
-    margin-bottom: 20px;
+    margin-top: 20px;
+    margin-top: 10px;
     color: #afafaf;
 }
 
@@ -191,7 +192,6 @@ body {
     display: none;
 }
 
-/* Allgemeines Styling für die Fan-Statement-Box bleibt gleich */
 
 .read-more-button {
     background: none; 

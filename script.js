@@ -175,19 +175,25 @@ document.addEventListener('DOMContentLoaded', function () {
 
 
 
-    // read more button
-    const toggleButton = document.getElementById("toggle-text");
-    const shortText = document.querySelector(".short-text");
-    const fullText = document.querySelector(".full-text");
+// Wähle alle "Mehr lesen"-Buttons und Texte aus
+const toggleButtons = document.querySelectorAll(".read-more-button");
 
-    toggleButton.addEventListener("click", () => {
+toggleButtons.forEach((button) => {
+    button.addEventListener("click", () => {
+        const quoteContent = button.previousElementSibling;
+        const shortText = quoteContent.querySelector(".short-text");
+        const fullText = quoteContent.querySelector(".full-text");
+
+        // Toggle den vollständigen Text
         if (fullText.classList.contains("read-more")) {
             fullText.classList.remove("read-more");
-            toggleButton.textContent = "Weniger lesen";
+            button.textContent = "Weniger lesen";
         } else {
             fullText.classList.add("read-more");
-            toggleButton.textContent = "Mehr lesen";
+            button.textContent = "Mehr lesen";
         }
     });
+});
+
 
 });
