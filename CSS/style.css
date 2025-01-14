@@ -124,7 +124,7 @@ body {
 }
 
 #calltoaction button a {
-    font-weight: 400;
+    /*font-weight: 400;*/
 }
 
 #calltoaction button:hover {
@@ -140,13 +140,21 @@ body {
 
 .fan-statement {
     background-color: #000000; 
-    border: 3px solid #ffffff;
+    border: 3px solid white;
     padding: 20px;
     border-radius: 8px;
     width: 67%;
     max-width: 785px;
     margin: 20px auto;
     font-family: Arial, sans-serif;
+}
+
+.question-short-text{
+    /*color: white;*/
+}
+
+.fan-statement{
+    min-height: 270px;
 }
 
 .quote {
@@ -180,12 +188,12 @@ body {
 .fan-name {
     font-weight: bold;
     font-size: 1rem;
-    color: #484848;
+    color: #afafaf;
 }
 
 .fan-role {
     font-size: 0.9rem;
-    color: #333;
+    color: #484848;
 }
 
 .read-more {
@@ -200,7 +208,7 @@ body {
     cursor: pointer; 
     font-size: 16px; 
     display: block; 
-    margin: 10px auto 0; 
+    margin: 20px auto 0; 
     text-align: center; 
 }
 
